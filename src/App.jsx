@@ -1,6 +1,11 @@
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
+import { GiTargetShot } from "react-icons/gi";
+import { IoSettings } from "react-icons/io5";
+import { ImMusic } from "react-icons/im";
+import { MdSecurity } from "react-icons/md";
+import { TbActivityHeartbeat } from "react-icons/tb";
 
 const App = () => {
   return ( 
@@ -27,11 +32,12 @@ const App = () => {
     <FaSearch className=" text-2xl hover:translate-y-1" />
     <CgProfile className="text-2xl hover:translate-y-1" />
     <TiShoppingCart className="text-2xl hover:translate-y-1" />
+
     </div>
     </nav> 
 
     {/* // creating sub heading here below what we give  */}
-    <main className=" bg-gradient-to-r from-indigo-500 ... no-repeat  w-screen h-auto p-[2rem] gap-[2rem] flex flex-crow
+    <main className=" bg-gradient-to-r from-indigo-500 ... z-10 ... no-repeat  w-screen h-auto p-[2rem] gap-[2rem] flex flex-row
     items-start justify-between"  >
 <div className="flex flex-col justify-center items-start gap-[2rem]">
   <img className="w-[70rem]" src="./src/images/sounds-season-logo.png" alt="sound-season "  />
@@ -40,12 +46,47 @@ const App = () => {
 <button type="button" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ... rounded-medium p-3 rounded-lg text-white text-xl font-bold relative left-[18rem]  ">
   SHOP NOW</button>
   </div>
-<div >
-  <img className=""   src="./src/images/Hunting-image.jpg" alt="" /> 
+<div>
+  <img className="" src="./src/images/Hunting-image.jpg" alt="" /> 
 </div>
     </main>
 
 {/* body of the content is here the below code what we wrote  */}
+<main className="w-screen h-auto flex items-center justify-around border-8 border-white-500/100 ... gap-2 p-2 text-red-900 text-xl font-bold"  >
+  <div className="Hunting & shooting">
+    <a href=""> <img src="./src/images/shooting-bg.jpg" alt="#" />
+    <p className=" ">HUNTING & SHOOTING</p>
+    <GiTargetShot className="absolute bottom-20 text-orange-50 text-4xl " /></a>
+   
+  </div>
+  <div >
+    <a href=""><img src="./src/images/industrial-bg.jpg" alt="" />
+    <p className="">INDUSTRIAL & MANUFACTURING</p>
+    <IoSettings className="absolute bottom-20 text-orange-50 text-4xl " />
+    </a>
+    
+    
+  </div>
+  <div>
+    <a href=""><img src="./src/images/music-bg.jpg" alt="" />
+  <p className="">HEAD PHONES</p></a>
+  
+  <ImMusic className="absolute bottom-20 text-orange-50 text-4xl " />
+
+  </div>
+  <div>
+    <a href=""><img src="./src/images/home-ps-31.jpg" alt="" />
+  <p className="">PUBLIC SAFETY & SECURITY</p>
+  <MdSecurity className="absolute bottom-20  text-orange-50 text-4xl " /></a>
+  
+  </div>
+  <div>
+    <a href=""> <img src="./src/images/home-health-img.jpg" alt="" />
+  <p className="">HEALTHY & SAFETY</p>
+  <TbActivityHeartbeat className="absolute bottom-20 text-orange-50 text-4xl  " /></a>
+ 
+  </div>
+</main>
 </>
     
   
