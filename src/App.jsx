@@ -14,7 +14,7 @@ const App = () => {
     <>
     <nav className=' w-screen h-auto flex items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ... hover:cursor-pointer '  >
     <div className="logo-container h-25 flex flex-row items-center justify-center hover:  " >
-    <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg "  src="./src/images/logo.jpg " alt="#" /></a> 
+    <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg "  src="./src/images/skull-candy.png " alt="#" /></a> 
     </div>
     <div >
     <a href="">
@@ -30,7 +30,7 @@ const App = () => {
     </div>
     <div className=" icons w-15 h-25 flex flex-row items-center justify-center gap-10   text-white" >
     <FaSearch className=" text-2xl hover:translate-y-1" />
-    <CgProfile className="text-2xl hover:translate-y-1" />
+    <CgProfile className="text-2xl hover:translate-y-1 " />
     <TiShoppingCart className=" text-yellow-400 text-2xl hover:translate-y-1" />
 
     </div>
@@ -43,7 +43,7 @@ const App = () => {
   <img className="w-[70rem] relative bottom-6" src="./src/images/sounds-season-logo.png" alt="sound-season "  />
 
 <p className="text-white text-3xl font-bold w-[30rem] h-[6rem] relative left-[12rem]  bottom-14 leading-[2.5rem]  " >SAVE BIG ON SELECT HEARING PROTECTION PRODUCTS!</p>
-<button type="button" class="  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...  rounded-medium p-3 rounded-lg text-white text-xl font-bold relative bottom-16 left-[18rem]  ">
+<button type="button" class="  bg-gradient-to-r from-sky-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...  rounded-medium p-3 rounded-lg text-white text-xl font-bold relative bottom-16 left-[18rem]  ">
   SHOP NOW</button>
   </div>
 <div>
@@ -55,32 +55,32 @@ const App = () => {
 <main className="w-screen h-auto flex items-center justify-around border-8 border-white-500/100 ... gap-2 p-2 text-red-900 text-xl font-bold"  >
   <div className="Hunting & shooting">
     <a href=""> <img className=" contrast-50 ... hover:contrast-100" src="./src/images/shooting-bg.jpg" alt="#" />
-    <p className=" ">HUNTING & SHOOTING</p>
-    <GiTargetShot className="absolute bottom-20 text-orange-50 text-4xl " /></a>
+    <p className="text-slate-400 hover:text-sky-400 ">HUNTING & SHOOTING</p>
+    <GiTargetShot className="absolute bottom-20 text-orange-50 text-4xl  " /></a>
   </div>
 
   <div >
     <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/industrial-bg.jpg" alt="" />
-    <p className="">INDUSTRIAL & MANUFACTURING</p>
+    <p className="text-slate-400 hover:text-sky-400">INDUSTRIAL & MANUFACTURING</p>
     <IoSettings className="absolute bottom-20 text-orange-50 text-4xl " />
     </a>
   </div>
 
   <div>
     <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/music-bg.jpg" alt="" />
-  <p className="">HEAD PHONES</p></a>
+  <p className="text-slate-400 hover:text-sky-400">HEAD PHONES</p></a>
   <ImMusic className="absolute bottom-20 text-orange-50 text-4xl " />
   </div>
 
   <div>
     <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/home-ps-31.jpg" alt="" />
-  <p className="">PUBLIC SAFETY & SECURITY</p>
+  <p className="text-slate-400 hover:text-sky-400 ...">PUBLIC SAFETY & SECURITY</p>
   <MdSecurity className="absolute bottom-20  text-orange-50 text-4xl " /></a>
   </div>
 
   <div>
     <a href=""> <img className=" contrast-50 ... hover:contrast-100" src="./src/images/home-health-img.jpg" alt="" />
-  <p className="">HEALTHY & SAFETY</p>
+  <p className="text-slate-400 hover:text-sky-400">HEALTHY & SAFETY</p>
   <TbActivityHeartbeat className="absolute bottom-20 text-orange-50 text-4xl  " /></a>
   </div>
 </main>
@@ -138,6 +138,7 @@ EASY SHAPE SYSTEM™</h1>
 </div>
 
 </main>
+
 </>
     
   
