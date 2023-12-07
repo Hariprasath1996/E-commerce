@@ -37,17 +37,17 @@ const App = () => {
     </nav> 
 
     {/* // creating sub heading here below what we give  */}
-    <main className=" bg-gradient-to-r from-indigo-500 ... z-10 ... no-repeat  w-screen h-auto p-[2rem] gap-[2rem] flex flex-row
+    <main className="   bg-gradient-to-r from-indigo-500 ... z-10 ... no-repeat  w-screen h-[40rem] p-[2rem]  flex flex-row
     items-start justify-between"  >
 <div className="flex flex-col justify-center items-start gap-[2rem]">
-  <img className="w-[70rem]" src="./src/images/sounds-season-logo.png" alt="sound-season "  />
+  <img className="w-[70rem] relative bottom-6" src="./src/images/sounds-season-logo.png" alt="sound-season "  />
 
-<p className="text-white text-3xl font-bold w-[30rem] h-[6rem] relative left-[12rem] leading-[2.5rem]  " >SAVE BIG ON SELECT HEARING PROTECTION PRODUCTS!</p>
-<button type="button" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ... rounded-medium p-3 rounded-lg text-white text-xl font-bold relative left-[18rem]  ">
+<p className="text-white text-3xl font-bold w-[30rem] h-[6rem] relative left-[12rem]  bottom-14 leading-[2.5rem]  " >SAVE BIG ON SELECT HEARING PROTECTION PRODUCTS!</p>
+<button type="button" class="  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...  rounded-medium p-3 rounded-lg text-white text-xl font-bold relative bottom-16 left-[18rem]  ">
   SHOP NOW</button>
   </div>
 <div>
-  <img className="" src="./src/images/Hunting-image.jpg" alt="" /> 
+  <img className=" h-[40rem] relative bottom-8 " src="./src/images/Hunting-image.jpg" alt="" /> 
 </div>
     </main>
 
@@ -57,39 +57,43 @@ const App = () => {
     <a href=""> <img src="./src/images/shooting-bg.jpg" alt="#" />
     <p className=" ">HUNTING & SHOOTING</p>
     <GiTargetShot className="absolute bottom-20 text-orange-50 text-4xl " /></a>
-   
   </div>
+
   <div >
     <a href=""><img src="./src/images/industrial-bg.jpg" alt="" />
     <p className="">INDUSTRIAL & MANUFACTURING</p>
     <IoSettings className="absolute bottom-20 text-orange-50 text-4xl " />
     </a>
-    
-    
   </div>
+
   <div>
     <a href=""><img src="./src/images/music-bg.jpg" alt="" />
   <p className="">HEAD PHONES</p></a>
-  
   <ImMusic className="absolute bottom-20 text-orange-50 text-4xl " />
-
   </div>
+
   <div>
-    <a href=""><img src="./src/images/home-ps-31.jpg" alt="" />
+    <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/home-ps-31.jpg" alt="" />
   <p className="">PUBLIC SAFETY & SECURITY</p>
   <MdSecurity className="absolute bottom-20  text-orange-50 text-4xl " /></a>
-  
   </div>
+
   <div>
     <a href=""> <img src="./src/images/home-health-img.jpg" alt="" />
   <p className="">HEALTHY & SAFETY</p>
   <TbActivityHeartbeat className="absolute bottom-20 text-orange-50 text-4xl  " /></a>
- 
   </div>
 </main>
 
 {/* add video about Decibullz */}
+
 <iframe width="1903" height="1070" src="https://www.youtube.com/embed/cWSGs1boCks?list=TLGG0OeiWFwZbBcwNzEyMjAyMw" title="Decibullz Custom Molded Earplugs and Hearing Protection. A fit for every lifestyle." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+{/* some message about our website */}
+
+<main>
+
+</main>
 
 </>
     
