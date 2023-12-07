@@ -31,7 +31,7 @@ const App = () => {
     <div className=" icons w-15 h-25 flex flex-row items-center justify-center gap-10   text-white" >
     <FaSearch className=" text-2xl hover:translate-y-1" />
     <CgProfile className="text-2xl hover:translate-y-1" />
-    <TiShoppingCart className="text-2xl hover:translate-y-1" />
+    <TiShoppingCart className=" text-yellow-400 text-2xl hover:translate-y-1" />
 
     </div>
     </nav> 
@@ -47,27 +47,27 @@ const App = () => {
   SHOP NOW</button>
   </div>
 <div>
-  <img className=" h-[40rem] relative bottom-8 " src="./src/images/Hunting-image.jpg" alt="" /> 
+  <img className=" h-[40rem] relative bottom-8 contrast-100 ... " src="./src/images/Hunting-image.jpg" alt="" /> 
 </div>
     </main>
 
 {/* body of the content is here the below code what we wrote  */}
 <main className="w-screen h-auto flex items-center justify-around border-8 border-white-500/100 ... gap-2 p-2 text-red-900 text-xl font-bold"  >
   <div className="Hunting & shooting">
-    <a href=""> <img src="./src/images/shooting-bg.jpg" alt="#" />
+    <a href=""> <img className=" contrast-50 ... hover:contrast-100" src="./src/images/shooting-bg.jpg" alt="#" />
     <p className=" ">HUNTING & SHOOTING</p>
     <GiTargetShot className="absolute bottom-20 text-orange-50 text-4xl " /></a>
   </div>
 
   <div >
-    <a href=""><img src="./src/images/industrial-bg.jpg" alt="" />
+    <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/industrial-bg.jpg" alt="" />
     <p className="">INDUSTRIAL & MANUFACTURING</p>
     <IoSettings className="absolute bottom-20 text-orange-50 text-4xl " />
     </a>
   </div>
 
   <div>
-    <a href=""><img src="./src/images/music-bg.jpg" alt="" />
+    <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/music-bg.jpg" alt="" />
   <p className="">HEAD PHONES</p></a>
   <ImMusic className="absolute bottom-20 text-orange-50 text-4xl " />
   </div>
@@ -79,7 +79,7 @@ const App = () => {
   </div>
 
   <div>
-    <a href=""> <img src="./src/images/home-health-img.jpg" alt="" />
+    <a href=""> <img className=" contrast-50 ... hover:contrast-100" src="./src/images/home-health-img.jpg" alt="" />
   <p className="">HEALTHY & SAFETY</p>
   <TbActivityHeartbeat className="absolute bottom-20 text-orange-50 text-4xl  " /></a>
   </div>
@@ -92,7 +92,25 @@ const App = () => {
 {/* some message about our website */}
 
 <main>
-
+<div >
+  <h1>WHY CUSTOM
+IS BETTER</h1>
+<p>Our earpieces easily form to the natural contours of your ear. This results in a perfect fit made just for you.</p>
+  <div>
+<h3>COMFORT</h3>
+<p>Decibullz earplugs are rated for up to 31 NRR. That’s one of the highest levels of hearing protection on the market.</p>
+  </div>
+  <div>
+<h3>ISOLATION</h3>
+  </div>
+  <div>
+<h3>SECURE</h3>
+<p>Thanks to their ability to create a secure, snug fit, Decibullz earpieces will stay in place when you’re on the move.</p>
+  </div>
+</div>
+<div>
+  <img src="" alt="" />
+</div>
 </main>
 
 </>
