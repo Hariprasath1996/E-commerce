@@ -45,7 +45,7 @@ const App = () => {
 </div>
     </main>
 
-{/*  */}
+{/* body of the content is here the below code what we wrote  */}
 </>
     
   
