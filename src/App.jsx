@@ -138,6 +138,7 @@ EASY SHAPE SYSTEM™</h1>
 </div>
 
 </main>
+{/* footer section */}
 
 </>
     
