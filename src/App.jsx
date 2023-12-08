@@ -6,12 +6,16 @@ import { IoSettings } from "react-icons/io5";
 import { ImMusic } from "react-icons/im";
 import { MdSecurity } from "react-icons/md";
 import { TbActivityHeartbeat } from "react-icons/tb";
+import { BsFacebook } from "react-icons/bs";
+import { FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const App = () => {
   return ( 
 
     // created header on this project 
     <>
+
     <nav className=' w-screen h-auto flex items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ... hover:cursor-pointer '  >
     <div className="logo-container h-25 flex flex-row items-center justify-center hover:  " >
     <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg "  src="./src/images/skull-candy.png " alt="#" /></a> 
@@ -141,28 +145,30 @@ EASY SHAPE SYSTEM™</h1>
 {/* footer section */}
 
 <main className="bg-gradient-to-r from-cyan-500 to-blue-500 ...w-screen h-auto  ">
-  <div className="flex flex-col items-start justify-center p-4">
+  <div className="flex flex-row items-start justify-around p-4 gap-16 leading-2">
 <div className="logo">
-  <img className=" rounded-xl " src="./src/images/skull-candy.png" alt="skull-candy image" />
+<a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg "  src="./src/images/skull-candy.png " alt="#" /></a> 
 </div>
-<ul>
-  <li>Terms of Service</li>
-  <li>Privacy Policy</li>
-  <li>FAQ</li>
+<ul className="text-white font-bold relative pt-2 bottom-3 text-2xl gap-2">
+  <li className="p-1">Terms of Service</li>
+  <li className="p-1">Privacy Policy</li>
+  <li className="p-1">FAQ</li>
 </ul>
-<button className="contact-us">CONTACT US</button>
+<button className="contact-us relative top-5  bg-gradient-to-r from-white to-white hover:from-pink-500 hover:to-yellow-500 ... rounded p-3 text-xl text-black font-bold  ">CONTACT US</button>
+<button className="subscribe relative top-5 bg-gradient-to-r from-white to-white hover:from-pink-500 hover:to-yellow-500 ... p-3 font-bold text-xl  text-black rounded">SUBSCRIBE</button>
   </div>
-  <div className="flex flex-col items-start justify-center p-4">
-<button className="subscribe">Subscribe</button>
-  </div>
- 
+
 </main>
-{/*  */}
-<div className="icon ">
-<span></span>
-<span></span>
-<span></span>
+{/* contact our-website on this three locations   */}
+<div className="icon flex flex-row  items-center justify-around p-6   bg-gradient-to-r from-cyan-500 to-blue-500 ...   ">
+  <a className=" flex flex-row  items-center justify-around p-4 gap-5" href="">
+    <button className="font-bold  text-2xl  text-blue-600  flex flex-row p-3 rounded  items-center justify-around gap-2 bg-gradient-to-r from-white to-white hover:from-pink-500 hover:to-yellow-500 ..."><BsFacebook />Facebook </button>
+<button className="font-bold  text-2xl text-red-600  flex flex-row p-3 rounded   items-center justify-around gap-2 bg-gradient-to-r from-white to-white hover:from-pink-500 hover:to-yellow-500 ...  "><FaYoutube  />Youtube</button>
+<button className="font-bold  text-2xl text-sky-600  flex flex-row p-3 rounded   items-center justify-around gap-2 bg-gradient-to-r from-white to-white hover:from-pink-500 hover:to-yellow-500 ..."><BsTwitterX />Twitter</button>
+  </a>
+
 </div>
+
 
 
 </>
