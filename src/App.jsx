@@ -140,6 +140,31 @@ EASY SHAPE SYSTEM™</h1>
 </main>
 {/* footer section */}
 
+<main className="bg-gradient-to-r from-cyan-500 to-blue-500 ...w-screen h-auto  ">
+  <div className="flex flex-col items-start justify-center p-4">
+<div className="logo">
+  <img className=" rounded-xl " src="./src/images/skull-candy.png" alt="skull-candy image" />
+</div>
+<ul>
+  <li>Terms of Service</li>
+  <li>Privacy Policy</li>
+  <li>FAQ</li>
+</ul>
+<button className="contact-us">CONTACT US</button>
+  </div>
+  <div className="flex flex-col items-start justify-center p-4">
+<button className="subscribe">Subscribe</button>
+  </div>
+ 
+</main>
+{/*  */}
+<div className="icon ">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
 </>
     
   
