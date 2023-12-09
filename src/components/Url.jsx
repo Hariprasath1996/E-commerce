@@ -23,3 +23,10 @@ const fetchProducts = async ()=>{
 useEffect(()=>{ 
     fetchProducts()},[])
 }
+//  created delete logic here 
+
+
+
+
+
+export default dataUrl;
