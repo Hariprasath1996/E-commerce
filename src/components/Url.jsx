@@ -22,5 +22,4 @@ const fetchProducts = async ()=>{
 // call the fetch function in use effect hook method 
 useEffect(()=>{ 
     fetchProducts()},[])
-
 }
