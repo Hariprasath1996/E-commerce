@@ -5,7 +5,7 @@ import Video from "./components/video";
 import ReferenceOne from "./components/ReferenceOne";
 import ReferenceTwo from "./components/ReferenceTwo";
 import Footer from "./components/Footer";
-
+// import dataUrl from "./components/Url";
 
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
     <ReferenceOne/>
     <ReferenceTwo/>
     <Footer/>
+    {/* <dataUrl/> */}
     </>
 );
 }

@@ -19,9 +19,22 @@ const fetchProducts = async ()=>{
     }
 };
 
-// call the fetch function in use effect hook method 
+// call the async function in use effect hook method 
+
 useEffect(()=>{ 
     fetchProducts()},[])
+    return <main className="flex flex-wrap items-center justify-center gap-6 min-h-screen min-w-full" >{products.map ((product)=>{
+        return (
+            <div className="flex flex-col items-center justify-center gap-2 p-2 " key={product.id}>
+                <img src={product.image} alt={product.title} />
+                {/* <h2>Title</h2>
+                <h3>Price</h3>
+                <p>Category</p> */}
+
+
+            </div>
+        )
+    })}</main>
 }
 //  created delete logic here 
 
