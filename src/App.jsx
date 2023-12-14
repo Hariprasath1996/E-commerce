@@ -10,7 +10,8 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return ( 
-    <>
+    <> 
+    {/* inside of fragment i created everything */}
     <Navbar/>
     <Front/>
     <Catagories/>
@@ -18,7 +19,6 @@ const App = () => {
     <ReferenceOne/>
     <ReferenceTwo/>
     <Footer/>
-    {/* <dataUrl/> */}
     </>
 );
 }
