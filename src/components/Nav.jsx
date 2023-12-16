@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 
-const Navbar = ({item}) => {
+const Navbar = ({}) => {
     return ( 
         <nav className=' w-screen h-auto flex items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
     <div className="logo-container w-auto h-25 flex flex-row items-center justify-center hover:  " >

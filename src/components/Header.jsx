@@ -1,4 +1,4 @@
-const Front = () => {
+const Header = () => {
     return ( 
         <main className="   bg-gradient-to-r from-indigo-500 ... z-10 ... no-repeat  w-screen h-[40rem] p-[2rem]  flex flex-row
     items-start justify-between"  >
@@ -15,4 +15,4 @@ SHOP NOW</button>
     );
 }
 
-export default Front ;
+export default Header ;
