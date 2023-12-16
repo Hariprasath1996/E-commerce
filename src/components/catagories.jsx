@@ -14,7 +14,7 @@ const Catagories = () => {
     </div>
   
     <div >
-      <a href=""><img className=" contrast-50 ... hover:contrast-100" src="./src/images/industrial-bg.jpg" alt="" />
+      <a href=""><img className=" contrast-50 ... hover:contrast-100 overflow-hidden z-999 " src="./src/images/industrial-bg.jpg" alt="" />
       <p className="text-slate-400  hover:text-black">INDUSTRIAL & MANUFACTURING</p>
       <IoSettings className="absolute bottom-20  text-orange-300 text-4xl " />
       </a>
