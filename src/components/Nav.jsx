@@ -11,13 +11,12 @@ const Navbar = ({item}) => {
     </div>
     <div >
     <ul className="menu-bar w-70 h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white  ">
-    <button className="" href=""><li className="All-Products hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ALL-PRODUCTS</li></button>
-    <a href=""><li className="hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HUNTING </li></a>
-    <a href=""><li className=" hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">INDUSTRIAL </li></a>
-    <a href=""> <li className=" hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">MUSIC</li></a>
-    <a href=""><li className="hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ..."> SECURITY</li></a>
-    <a href=""> <li className=" hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ..."> SAFETY</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </a>
-    <a href=""></a>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ALL-PRODUCTS</li>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HUNTING </li>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">INDUSTRIAL </li>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">MUSIC</li>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ..."> SECURITY</li>
+    <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ..."> SAFETY</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     </ul>
     </div>
     <div className=" icons w-15 h-25 flex flex-row items-center justify-center gap-6 text-white" >

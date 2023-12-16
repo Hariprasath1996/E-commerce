@@ -25,14 +25,14 @@ useEffect(()=>{
     fetchProducts()},[])
     return <main className="flex flex-wrap items-center justify-center gap-6 min-h-screen min-w-full" >{products.map ((product)=>{
         return (
-            <div className="flex flex-col items-center justify-center gap-2 p-2 " key={product.id}>
+            <div className="flex flex-col items-center justify-center gap-2 p-2  " key={product.id}>
                 <img src={product.image} alt={product.title} />
-                {/* <h2>Title</h2>
+            {/* <h2>Title</h2>
                 <h3>Price</h3>
                 <p>Category</p> */}
 
 
-            </div>
+            </div> 
         )
     })}</main>
 }
