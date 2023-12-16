@@ -5,7 +5,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
     return ( 
-        <main className="bg-gradient-to-r from-cyan-500 to-blue-500 ...w-screen h-auto  ">
+        <footer className="bg-gradient-to-r from-cyan-500 to-blue-500 ...w-screen h-auto  ">
 <div className="flex flex-row items-start justify-around p-4 gap-16 leading-2">
 <div className="logo">
 <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg  "  src="./src/images/skull-candy.png " alt="#" /></a> 
@@ -30,7 +30,7 @@ const Footer = () => {
 
 </div>
 
-</main>
+</footer>
 );
 }
 
