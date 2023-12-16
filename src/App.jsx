@@ -1,8 +1,8 @@
 import Navbar from "./components/Nav";
 import Header from "./components/Header";
-import Catagories from "./components/catagories";
-import AboutOne from "./components/AboutOne";
-import AboutTwo from "./components/AboutTwo";
+import Catagories from "./components/Catagories";
+import Customs from "./components/Customs";
+import Systems from "./components/Systems";
 import Footer from "./components/Footer";
 
 
@@ -39,8 +39,8 @@ const App = () => {
     <Navbar/>
     <Header/>
     <Catagories/>
-    <AboutOne/>
-    <AboutTwo/>
+    <Customs/>
+    <Systems/>
     <Footer/>
     
     </>
