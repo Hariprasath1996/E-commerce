@@ -6,9 +6,6 @@ import Systems from "./components/Systems";
 import Footer from "./components/Footer";
 
 
-
-
-
 // import react router dom here below
 
 

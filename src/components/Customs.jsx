@@ -1,7 +1,7 @@
 
 const Customs = () => {
     return ( 
-<main className="flex flex-row items-center justify-between w-screen h-auto p-4" >
+<section className="flex flex-row items-center justify-between w-screen h-auto p-4" >
 <div className="flex flex-col items-center justify-between  h-auto gap-12 p-8" >
 <h1 className="text-6xl font-bold w-[44.3rem] relative right-20  ">WHY CUSTOM
 IS BETTER</h1>
@@ -21,7 +21,7 @@ IS BETTER</h1>
 <div><img src="./src/images/zig-zag-right.jpg" alt="#" />
 </div>
 
-</main>
+</section>
 
     );
 }

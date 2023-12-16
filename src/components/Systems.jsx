@@ -2,7 +2,7 @@
 
 const Systems = () => {
     return ( 
-        <main className="flex flex-row items-center justify-between w-screen h-auto p-10 relative left-12 " >
+        <section className="flex flex-row items-center justify-between w-screen h-auto p-10 relative left-12 " >
 <div>
 <img src="./src/images/zig-zag-left.jpg" alt="#" />
 </div>
@@ -22,7 +22,7 @@ EASY SHAPE SYSTEM™</h1>
 <p  className=" text-2xl   text-black pl-4 ">Decibullz earpieces can be re-warmed and molded to the shape of your ears until you find the perfect fit.</p></div>
 </div>
 
-</main>
+</section>
 );
 }
 
