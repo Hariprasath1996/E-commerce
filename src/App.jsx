@@ -1,9 +1,12 @@
-import Navbar from "./components/Nav";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Catagories from "./components/Catagories";
+import Catagories from "./components/catagories";
 import Customs from "./components/Customs";
 import Systems from "./components/Systems";
 import Footer from "./components/Footer";
+
+
+
 
 
 // import react router dom here below
@@ -39,7 +42,6 @@ const App = () => {
     <Customs/>
     <Systems/>
     <Footer/>
-    
     </>
 );
 }
