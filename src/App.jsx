@@ -1,34 +1,52 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Catagories from "./components/catagories";
-import Customs from "./components/Customs";
-import Systems from "./components/Systems";
-import Footer from "./components/Footer";
-
-
-
-
-
+import Navbar  from "./components/routes";
+import Header from "./components/routes";
+import Catagories from "./components/routes";
+import Customs from "./components/routes";
+import Systems from "./components/routes";
+import Footer from "./components/routes"; 
+import Root from "./components/routes";
 // import react router dom here below
+import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 
 
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-// } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root/>,
+    children : [
+      {
+      path:"/ALL-PRODUCTS",
+      element:<Navbar/>,
+    },
+      {
+        path:"/HUNTING",
+        element:<Navbar/>,
+      },
+      {
+        path:"/INDUSTRIAL",
+        element:<Navbar/>,
+      },
+      {
+        path:"/MUSIC",
+        element:<Navbar/>,
+      },
+      {
+        path:"/SECURITY",
+        element:<Navbar/>,
+      },
+      {
+        path:"/SAFETY",
+        element:<Navbar/>,
+      }
+    ]
+  },
+]);
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <div>Hello world!</div>,
-//   },
-// ]);
+const routing = () => {
+  return (   <RouterProvider router={router} />  );
+}
 
-// const AppOne = () => {
-//   return (   <RouterProvider router={router} />  );
-// }
-
-// export { AppOne} ;
+export { routing} ; 
 
 
 

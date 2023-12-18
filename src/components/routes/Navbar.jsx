@@ -12,6 +12,7 @@ const Navbar = () => {
     <div >
     <ul className="menu-bar w-70 h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white   ">
     <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ALL-PRODUCTS</li>
+    
     <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HUNTING </li>
     <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">INDUSTRIAL </li>
     <li className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">MUSIC</li>
@@ -20,6 +21,7 @@ const Navbar = () => {
     </ul>
     </div>
     <div className=" icons w-15 h-25 flex flex-row items-center justify-center gap-6 text-white" >
+    <input className="w-50 h-10  bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ...  " type="text" placeholder=" Search Here... " />
     <FaSearch className=" text-2xl hover:translate-y-1" />
     <CgProfile className="text-2xl hover:translate-y-1 " />
     <TiShoppingCart className=" text-yellow-400 text-2xl hover:translate-y-1" />
