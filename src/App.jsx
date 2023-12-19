@@ -14,14 +14,15 @@ function App() {
     <div className=" overflow-x-hidden ">
     <Navbar/>
     <Header/>
+    <Routes>
+        <Route path="/"  element={<h1></h1>} />
+        <Route path="/shop" element={<ShopProducts/>} />
+        <Route path="/ABOUT" element={<h1 ></h1>} />
+        <Route path="/CONTACT" element={<h1></h1>} />
+      </Routes>
     <Catagories/>
     <Customs/>
-      <Routes>
-        <Route path="/"  element={<h1>Hello</h1>} />
-        <Route path="/shop" element={<ShopProducts/>} />
-        <Route path="/ABOUT" element={<h1 className="p-4 ">hi</h1>} />
-        <Route path="/CONTACT" element={<h1>hello</h1>} />
-      </Routes>
+      
       <Systems/>
       <Footer/>
     </div>
