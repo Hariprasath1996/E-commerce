@@ -1,7 +1,7 @@
 
 import Products from "../../constants/index";
 
-const products = () => {
+const SpecialItems = () => {
     const Item = (props) => {
     return (
         <div className="max-w-sm mx-auto bg-white w-96 ml-10 mt-4 mb-8 flex flex-col items-center
@@ -15,6 +15,7 @@ const products = () => {
         </span>
         <button className="hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-yellow-400/100 ... mb-3">ADD TO CART</button>
         </div>
+        
     );
     };
     return (
@@ -36,4 +37,4 @@ const products = () => {
     );
 };
 
-export default products;
+export default SpecialItems;

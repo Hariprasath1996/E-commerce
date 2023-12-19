@@ -57,25 +57,25 @@ const  AllProducts = [
     id: 9,
     name: "Shooting Filters",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/129/1176/ISO_-_LO_Radio__1__35105.1685642977.png?c=2"
+    imgUrl:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2022/08/Grind_Light-Grey-Blue_S2GTW-P751_Buds-Case-Open-Hero_v002.jpg"
     
 },{
     id: 10,
     name: "Radio Surveillance",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/133/1156/LO-STANDALONE_-_MAIN__11194.1682479584.jpg?c=2"
+    imgUrl:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2021/07/blueproductimage.webp"
     
 },{
     id: 11,
     name: "Earpiece",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/128/938/2-WAY-STANDALONE_-_MAIN__13333.1677238669.jpg?c=2"
+    imgUrl:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2022/08/Push-Active_Black-Orange_S2BPW-P740_Buds-Case-Open-Hero_v002.jpg"
     
 },{
     id: 12,
     name: "Tube Headset",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/125/857/Decibullz-2022-NEW-Metal-Detectable-Earplugs-MTLD---MAIN-PRODUCT---5__51130.1658296655.jpg?c=2"
+    imgUrl:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/feafe7eb-1d21-4196-8ee7-83336ed86271_small.jpg"
     
 },{
     id: 13,
@@ -95,7 +95,14 @@ const  AllProducts = [
     price: 'price: ₹ 2800 ',
     imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/74/787/Percussive---Float__36791.1698770137.jpg?c=2"
     
-}     
+},
+{
+    id: 16,
+    name: " GAMING-WIRED & BT HEADSET",
+    price: 'price: ₹ 3200 ',
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/10/PLYR_TMNT_S6PPY-R793_Hero_v001.jpg"
+}   
+
 
 ]
 export default AllProducts;

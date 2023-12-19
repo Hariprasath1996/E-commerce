@@ -4,11 +4,12 @@ import Catagories from "./components/routes/Catagories";
 import Customs from "./components/routes/Customs";
 import Systems from "./components/routes/Systems";
 import Footer from "./components/routes/Footer"; 
-import Products from "./components/routes/Home.root.route";
+import SpecialItems from "./components/routes/Home.root.route";
 import { Route, Routes } from "react-router-dom";
-import AllProducts from "./components/routes/Shopnow";
+import ShopProducts from "./components/routes/Shopnow";
 
 function App() {
+
 
   return (
     <div className=" overflow-x-hidden ">
@@ -17,9 +18,9 @@ function App() {
     <Catagories/>
     <Customs/>
       <Routes>
-        <Route path="/" element={<Products/>} />
-        <Route path="/shop" element={<AllProducts/>} />
-        <Route path="/ABOUT" element={<h1>hi</h1>} />
+        <Route path="/"  element={<SpecialItems/>} />
+        <Route path="/shop" element={<ShopProducts/>} />
+        <Route path="/ABOUT" element={<h1 className="p-4 ">hi</h1>} />
         <Route path="/CONTACT" element={<h1>hello</h1>} />
       </Routes>
       <Systems/>
@@ -29,4 +30,3 @@ function App() {
 }
 
 export default App;
-
