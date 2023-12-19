@@ -12,7 +12,7 @@ const ShopProducts = () => {
         <span className="text-xl font-semibold text-gray-800 mb-3">
             {props.price}
         </span>
-        {/* <button className="hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-yellow-400/100 ... mb-3">ADD TO CART</button> */}
+        <button className="hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-yellow-400/100 ... mb-3">ADD TO CART</button>
         </div>
     );
     };
