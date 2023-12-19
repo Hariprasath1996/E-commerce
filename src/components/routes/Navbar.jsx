@@ -12,9 +12,10 @@ const Navbar = () => {
     </div>
     <div >
     <ul className="menu-bar w-50 h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white   ">
-    <NavLink to="" className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HOME</NavLink>
+    <NavLink to="/" className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HOME</NavLink>
     <NavLink to="/ABOUT" className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ABOUT </NavLink>
-    <NavLink to="/CONTACT"className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">CONTACT</NavLink>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    <NavLink to="/CONTACT"className=" hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">CONTACT</NavLink>  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     </ul>
     </div>
     <div className=" icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
