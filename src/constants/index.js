@@ -2,59 +2,56 @@
 const  Products = [
     {
     id: 1,
-    name: "A Custom Molded Earplugs",
+    name: "Gaming BOOM HEADSET",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/75/794/FALLING-NATURAL-PLUGS-black__59340.1698770138.jpg?c=2"
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/6c9cc50c-f4b0-4dad-8588-3bba979a3548_small-1.jpg"
 
 },
 {
     id: 2,
     name: "Percussive Shooting Filters",
     price: 'price: ₹ 2400 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/74/787/Percussive---Float__36791.1698770137.jpg?c=2"
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2022/08/Mod_True-Black_S2FYW-P740_S2FYW-Q740_Buds-Case-Closed_v001.jpg"
     
 } 
 ,{
     id: 3,
-    name: " Earplug Pro-Pack",
+    name: " GAMING-WIRED & BT HEADSET",
     price: 'price: ₹ 3200 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/80/909/Decibullz-Pro-Post-Black_Final__93678.1698770142.jpg?c=2"
-    
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/10/PLYR_TMNT_S6PPY-R793_Hero_v001.jpg"
 }
 ,{
     id: 4,
-    name: " Earplug Lanyard",
+    name: " WIRED Lanyard",
     price: 'price: ₹ 2200 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/77/648/Lanyard_Only__67565.1698770141.png?c=2"
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2021/07/o.webp"
     
 },
 {
     id: 5,
     name: "Professional High Fidelity Earplugs",
     price: 'price: ₹ 3800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/86/786/Pro-Hi-Fi-Float__82510.1698770463.jpg?c=2"
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/10/RailANC_Black_Hero02_R02..jpg"
     
 },
 {
     id: 6,
-    name: "Fidelity Earplugs",
+    name: "Fidelity BT HEADSET",
     price: 'price: ₹ 3600 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/102/783/Hi-Fi-Float__65137.1698770479.jpg?c=2"
-    
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2021/07/t.webp"
 }
 ,  
 {
     id: 7,
     name: "Security Radio Surveillance",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/135/1221/SAFE_SOUND_BUNDLE_BLK_MAIN_PRODUCT_TILE___40353.1698770546.jpg?c=2"
-    
-},{
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/10/Dime-3_True-Black_S2DCW-R740_Buds-Case-Open-Hero__v001.jpg"
+},
+{
     id: 8,
-    name: "A Custom Molded Earplugs",
+    name: "GAMING BOOM BT HEADSET",
     price: 'price: ₹ 2800 ',
-    imgUrl:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/130/1166/AWA_-_LO_Radio_1__39449.1685637746.png?c=2"
-    
+    image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2021/07/mainproduct.webp"
 },
 // {
 //     id: 9,
