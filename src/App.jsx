@@ -4,7 +4,6 @@ import Catagories from "./components/routes/Catagories";
 import Customs from "./components/routes/Customs";
 import Systems from "./components/routes/Systems";
 import Footer from "./components/routes/Footer"; 
-// import SpecialItems from "./components/routes/Home.root.route";
 import { Route, Routes } from "react-router-dom";
 import ShopProducts from "./components/routes/Shopnow";
 

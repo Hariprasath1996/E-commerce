@@ -17,6 +17,7 @@ const ShopProducts = () => {
     );
     };
     return (
+        
     <div>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
         {AllProducts.map((item , id) => {
