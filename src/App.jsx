@@ -26,9 +26,9 @@ function App() {
       
       <Systems/>
       <Footer/>
-     < Routes>
-     <Route path="/faq"  element={<Faq/>} />
-     </Routes>
+    < Routes>
+    <Route path="/faq"  element={<Faq/>} />
+    </Routes>
 
     </div>
   );
