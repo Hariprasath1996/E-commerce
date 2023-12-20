@@ -3,7 +3,7 @@ import AllProducts from "../../constants/AllProducts";
 const ShopProducts = () => {
     const Item = (props) => {
     return (
-        <div className="max-w-sm mx-auto bg-white w-96 ml-10 mt-4 mb-8 flex flex-col items-center
+        <div className=" max-w-sm mx-auto bg-white w-96 ml-10 mt-4 mb-8 flex flex-col items-center
         hover:scale-105 gap-4 shadow-lg rounded-lg overflow-hidden justify-evenly">
         <img className="  w-74 h-64 object-center" src={props.image} />
         <h2 className="text-xl font-semibold text-gray-800 mb-1">
@@ -20,7 +20,7 @@ const ShopProducts = () => {
         
     <div>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
-        {AllProducts.map((item , id) => {
+        {AllProducts.map((item,id) => {
             return (
             <Item
                 key={id}

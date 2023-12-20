@@ -9,7 +9,7 @@ const Footer = () => {
 <ul className= " flex flex-col text-white font-bold relative pt-2 bottom-3 text-2xl gap-2">
 <NavLink to="" className="p-1">Terms of Service</NavLink>
 <NavLink to="" className="p-1">Privacy Policy</NavLink>
-<NavLink to="" className="p-1">FAQ</NavLink>
+<NavLink to="/faq" className="p-1">FAQ</NavLink>
 </ul>
 <button className="contact-us relative top-5  bg-gradient-to-r from-white to-white hover:from-white hover:to-gray-400 ... rounded p-3 text-xl text-black font-bold  ">CONTACT US</button>
 <button className="subscribe relative top-5 bg-gradient-to-r from-white to-white hover:from-white hover:to-gray-400 ... ... p-3 font-bold text-xl  text-black rounded">SUBSCRIBE</button>
