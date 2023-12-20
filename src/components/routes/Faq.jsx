@@ -1,9 +1,5 @@
 import { useState } from "react"
-
-
-
-
-
+import { FaqData } from "../../constants/Faq";
 
 const Faq = ()=>{
 
@@ -29,3 +25,5 @@ const Faq = ()=>{
     )
     
 }
+
+export default Faq;

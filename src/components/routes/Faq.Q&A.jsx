@@ -1,5 +1,6 @@
-import { BiUpArrow } from "react-icons/bi";
+// import { BiUpArrow } from "react-icons/bi";
 import { BiDownArrow } from "react-icons/bi";
+
 const FaqQuestionsAndAnswers  = () => {
     const {question,answer}=items;
     const [Show,setShow]=useState(false)
@@ -16,7 +17,7 @@ const FaqQuestionsAndAnswers  = () => {
                 </div>
                 <div>
                 { Show && <p>{answer}</p> }
-                <BiUpArrow />                                       
+                {/* <BiUpArrow />                                        */}
                 </div>
         </article>
     );
