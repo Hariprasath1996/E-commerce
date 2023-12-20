@@ -6,6 +6,7 @@ import Systems from "./components/routes/Systems";
 import Footer from "./components/routes/Footer"; 
 import { Route, Routes } from "react-router-dom";
 import ShopProducts from "./components/routes/Shopnow";
+import Faq from "./components/routes/Faq"
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
       
       <Systems/>
       <Footer/>
+     < Routes>
+     <Route path="/faq"  element={<Faq/>} />
+     </Routes>
+
     </div>
   );
 }
