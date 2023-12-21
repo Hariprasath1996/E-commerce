@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+
 
 const Systems = () => {
     return ( 
@@ -21,7 +21,7 @@ EASY SHAPE SYSTEM™</h1>
 <h3 className="text-4xl font-bold  text-orange-500 w-3/4 relative right-20">REMOLDABLE</h3>
 <p  className=" text-2xl   text-black pl-4 ">Decibullz earpieces can be re-warmed and molded to the shape of your ears until you find the perfect fit.</p></div>
 </div>
-<Outlet/>
+
 </section>
 );
 }

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 
 
 const Catagories = () => {
@@ -33,7 +33,7 @@ const Catagories = () => {
     <p className="text-slate-400 hover:text-black">HEALTHY & SAFETY</p>
     
     </div>
-    <Outlet/>
+    {/* <Outlet/> */}
   </main> );
 }
 

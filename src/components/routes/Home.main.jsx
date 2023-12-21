@@ -1,14 +1,20 @@
-
+import { Header } from "./Header";
+import { Customs} from "./Customs";
+import { Systems} from "./Systems"
+import {Catagories} from "./Catagories"
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 const Home = () => {
     return ( 
         <>
-
-    
-        <h1>hello home</h1>
-        
-
-        
+        <Navbar/>
+        <Header/>
+        <Catagories/>
+        <Customs/>
+        <Systems/>
+        <Footer/>
         </>
+        
     );
 }
 
