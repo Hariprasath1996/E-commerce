@@ -36,4 +36,4 @@ const ShopProducts = () => {
     );
 };
 
-export default  ShopProducts;
+export   {ShopProducts};

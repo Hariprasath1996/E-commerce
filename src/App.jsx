@@ -16,19 +16,33 @@ const router = createBrowserRouter([
     element: <Root/>,
     children:[
       {
-        path: "/",
+        path: "",
         element: <Home/>,
-
-      }
+        children:[
+        //   {
+          
+        //     path: "/faq",
+        //     element: <h1>hi</h1>,
+          
+        // }
+      
+      ],
+      },
+      // {
+      //   path: "/faq",
+      //   element: <Faq/>,
+      // }
     ]
   },
 ]);
 
 const app=()=>{
   return (
+    
     <RouterProvider router={router} />
   )
 }
+export default app;
 
 
 
@@ -40,28 +54,28 @@ const app=()=>{
 
 
 
-function App() {
-  return (
-    <div className=" overflow-x-hidden ">
-    <Navbar/>
-    <Header/>
-    <Routes>
-        <Route path="/"  element={<h1></h1>} />
-        <Route path="/Shop-products"  element={<ShopProducts/>} />
-        <Route path="/ABOUT" element={<h1 ></h1>} />
-        <Route path="/CONTACT" element={<h1></h1>} />
-      </Routes>
-    <Catagories/>
-    <Customs/>
+// function App() {
+//   return (
+//     <div className=" overflow-x-hidden ">
+//     <Navbar/>
+//     <Header/>
+//     <Routes>
+//         <Route path="/"  element={<h1></h1>} />
+//         <Route path="/Shop-products"  element={<ShopProducts/>} />
+//         <Route path="/ABOUT" element={<h1 ></h1>} />
+//         <Route path="/CONTACT" element={<h1></h1>} />
+//       </Routes>
+//     <Catagories/>
+//     <Customs/>
       
-      <Systems/>
-      <Footer/>
-    < Routes>
-    <Route path="/faq"  element={<Faq/>} />
-    </Routes>
+//       <Systems/>
+//       <Footer/>
+//     < Routes>
+//     <Route path="/faq"  element={<Faq/>} />
+//     </Routes>
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;

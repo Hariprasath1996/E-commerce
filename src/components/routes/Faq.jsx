@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaqData } from "../../constants/Faq";
+import { Outlet } from "react-router-dom";
 
 const Faq = ()=>{
 
@@ -21,9 +22,10 @@ const Faq = ()=>{
 
                 </div>
             </div>
+            <Outlet/>
         </main>
     )
     
 }
 
-export default Faq;
+export  {Faq};

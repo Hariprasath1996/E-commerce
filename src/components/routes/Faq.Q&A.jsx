@@ -1,5 +1,6 @@
 // import { BiUpArrow } from "react-icons/bi";
 import { BiDownArrow } from "react-icons/bi";
+import { Outlet } from "react-router-dom";
 
 const FaqQuestionsAndAnswers  = () => {
     const {question,answer}=items;
@@ -19,8 +20,9 @@ const FaqQuestionsAndAnswers  = () => {
                 { Show && <p>{answer}</p> }
                 {/* <BiUpArrow />                                        */}
                 </div>
+                <Outlet/>
         </article>
     );
 }
 
-export default FaqQuestionsAndAnswers ;
+export  {FaqQuestionsAndAnswers} ;

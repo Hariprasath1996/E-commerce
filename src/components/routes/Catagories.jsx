@@ -1,3 +1,6 @@
+import { Outlet } from "react-router-dom";
+
+
 const Catagories = () => {
     return ( <main className="w-screen h-auto flex items-center justify-around border-8 border-white-500/100 ... gap-2 p-2 text-red-900 text-xl font-bold"  >
     <div className="Hunting & shooting">
@@ -30,7 +33,8 @@ const Catagories = () => {
     <p className="text-slate-400 hover:text-black">HEALTHY & SAFETY</p>
     
     </div>
+    <Outlet/>
   </main> );
 }
 
-export default Catagories;
+export  {Catagories};

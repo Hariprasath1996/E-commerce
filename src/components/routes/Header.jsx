@@ -1,4 +1,4 @@
-
+import { Outlet } from "react-router-dom";
 const Header = () => {
     return ( 
     <main className="   bg-gradient-to-r from-indigo-500 ... z-10 ... no-repeat  w-screen h-[40rem] p-[2rem]  flex flex-row
@@ -10,8 +10,9 @@ const Header = () => {
 <div>
 <img className=" h-[40rem] relative bottom-8 contrast-100 ... " src="./src/images/Hunting-image.jpg" alt="" /> 
 </div>
+<Outlet/>
     </main>
     );
 }
 
-export default Header ;
+export  {Header} ;
