@@ -8,7 +8,7 @@ const FaqProducts = () => {
             setShow((prev)=>!(prev))
         }
     return (
-        <div className="  bg-purple-100 w-screen h-auto p-2 mb-5 flex flex-col items-center
+        <div className="  bg-red-100 w-screen h-auto p-2 mb-5 flex flex-col items-center
         hover:scale-105 gap-1 shadow-lg rounded-lg overflow-hidden justify-center ">
         <img className="  w-74 h-64 object-center" src="./src/images/FAQ.png " />
         <div className="w-[100rem] h-auto flex flex-row ml-7 p-4 " >
