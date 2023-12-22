@@ -13,10 +13,9 @@ const Navbar = () => {
     <div  >
     <ul className="menu-bar w-auto h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white   ">
     <NavLink to="/Home" className="Home w-auto hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">HOME</NavLink>
-    <NavLink to="/Shop"  className="Shop   hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ... {({is Active})=> is Active ? `text-red-500`} ">SHOP NOW</NavLink>
+    <NavLink to="/Shop"  className="Shop hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ... {({is Active})=> is Active ? `text-red-500`} ">SHOP NOW</NavLink>
     <NavLink to="/ABOUT" className="About hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ABOUT </NavLink>
     <NavLink to="/CONTACT"className="Contact hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">CONTACT</NavLink> 
-
     </ul>
     </div>
     <div className=" icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
@@ -24,13 +23,8 @@ const Navbar = () => {
     <FaSearch className=" text-3xl hover:translate-y-1" />
     <CgProfile className="text-3xl hover:translate-y-1 " />
     <TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1" />
-    
-    </div>
-    
+    </div>   
     </nav>
-
-    
-    
     );
 }
 

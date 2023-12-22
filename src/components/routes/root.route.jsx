@@ -3,10 +3,11 @@ import {Navbar} from "./Navbar"
 import{Footer} from "./Footer"
 
 
+
 const Root = () => {
     return (
         <>
-        <Navbar/>       
+        <Navbar/>  
         <Outlet/>
         <Footer/>      
         </>
