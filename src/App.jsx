@@ -9,6 +9,10 @@ const router = createBrowserRouter([
     element: <Root/>,  
     
     children:[
+      {
+        path: "/Home",
+        element:<Home/>
+      },
 {
     path:"/Shop",
     element:<ShopProducts/>,
@@ -24,10 +28,7 @@ const router = createBrowserRouter([
     
   },
 
-  {
-    path: "/Home",
-    element:<Home/>
-  },
+
 ]);
 
 const app=()=>{
