@@ -4,6 +4,7 @@ import{Root,Home} from"./constants/root"
 import { ShopProducts } from "./components/routes/Shopnow";
 import {FaqProducts} from "./components/routes/Faq.route"
 import {LoginPage} from "./components/routes/Login"
+import {AboutPage} from "./components/routes/About"
 
 const router = createBrowserRouter([
     {path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 {
   path:"/Login",
   element:<LoginPage/>,
+},
+{
+  path:"/ABOUT",
+  element:<AboutPage/>,
 }
 
 
