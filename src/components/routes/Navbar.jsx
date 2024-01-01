@@ -21,7 +21,9 @@ const Navbar = () => {
     <div className=" icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
     <input className="w-50 h-10  bg-white text-black rounded font-bold border-4 border-indigo-300/100 ... text-xl  " type="text" placeholder=" Search Here... " />
     <FaSearch className=" text-3xl hover:translate-y-1" />
+    <NavLink to="/Login" className="" >
     <CgProfile className="text-3xl hover:translate-y-1 " />
+    </NavLink>
     <TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1" />
     </div>   
     </nav>
