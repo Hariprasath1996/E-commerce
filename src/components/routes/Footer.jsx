@@ -8,7 +8,7 @@ const Footer = () => {
 </div>
 <ul className= " flex flex-col text-white font-bold relative pt-2 bottom-3 text-2xl gap-2">
 <NavLink to="" className="p-1">Terms of Service</NavLink>
-<NavLink to="" className="p-1">Privacy Policy</NavLink>
+<NavLink to="/privacy" className="p-1">Privacy Policy</NavLink>
 <NavLink to="/faq" className="p-1">FAQ</NavLink>
 </ul>
 <NavLink to = "/CONTACT">

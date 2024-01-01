@@ -6,6 +6,7 @@ import {FaqProducts} from "./components/routes/Faq.route"
 import {LoginPage} from "./components/routes/Login"
 import {AboutPage} from "./components/routes/About"
 import {ContactPage} from "./components/routes/Contact"
+import { PolicyPage } from "./components/routes/PrivacyPolicy";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
 {
   path:"/CONTACT",
   element:<ContactPage/>,
+},
+{
+  path:"/privacy",
+  element:<PolicyPage/>,
 },
 
 
