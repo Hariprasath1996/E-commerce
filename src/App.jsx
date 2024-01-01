@@ -5,6 +5,8 @@ import { ShopProducts } from "./components/routes/Shopnow";
 import {FaqProducts} from "./components/routes/Faq.route"
 import {LoginPage} from "./components/routes/Login"
 import {AboutPage} from "./components/routes/About"
+import {ContactPage} from "./components/routes/Contact"
+
 
 const router = createBrowserRouter([
     {path: "/",
@@ -30,7 +32,13 @@ const router = createBrowserRouter([
 {
   path:"/ABOUT",
   element:<AboutPage/>,
-}
+},
+{
+  path:"/CONTACT",
+  element:<ContactPage/>,
+},
+
+
 
 
 

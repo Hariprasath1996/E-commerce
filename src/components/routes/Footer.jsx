@@ -11,7 +11,10 @@ const Footer = () => {
 <NavLink to="" className="p-1">Privacy Policy</NavLink>
 <NavLink to="/faq" className="p-1">FAQ</NavLink>
 </ul>
+<NavLink to = "/CONTACT">
 <button className="contact-us relative top-5  bg-gradient-to-r from-white to-white hover:from-white hover:to-gray-400 ... rounded p-3 text-xl text-black font-bold  ">CONTACT US</button>
+</NavLink>
+
 <button className="subscribe relative top-5 bg-gradient-to-r from-white to-white hover:from-white hover:to-gray-400 ... ... p-3 font-bold text-xl  text-black rounded">SUBSCRIBE</button>
 </div>
 </main>
