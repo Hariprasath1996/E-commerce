@@ -7,6 +7,7 @@ import {LoginPage} from "./components/routes/Login"
 import {AboutPage} from "./components/routes/About"
 import {ContactPage} from "./components/routes/Contact"
 import { PolicyPage } from "./components/routes/PrivacyPolicy";
+import { ServicePage } from "./components/routes/Service";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
 {
   path:"/privacy",
   element:<PolicyPage/>,
+},
+{
+  path:"/services",
+  element:<ServicePage/>,
 },
 
 

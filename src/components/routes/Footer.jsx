@@ -7,7 +7,7 @@ const Footer = () => {
 <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className="rounded-lg  "  src="./src/images/skull-candy.png " alt="#" /></a> 
 </div>
 <ul className= " flex flex-col text-white font-bold relative pt-2 bottom-3 text-2xl gap-2">
-<NavLink to="/services" className="p-1">Terms of Service</NavLink>
+<NavLink to="/services" className="p-1">Terms And Conditions</NavLink>
 <NavLink to="/privacy" className="p-1">Privacy Policy</NavLink>
 <NavLink to="/faq" className="p-1">FAQ</NavLink>
 </ul>
