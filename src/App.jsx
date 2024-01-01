@@ -9,16 +9,16 @@ import {ContactPage} from "./components/routes/Contact"
 import { PolicyPage } from "./components/routes/PrivacyPolicy";
 import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
+import { IndustryProducts } from "./components/routes/Industrial";
 
 
 const router = createBrowserRouter([
     {path: "/",
     element: <Root/>,  
-    
     children:[
       {
         path: "/Home",
-        element:<Home/>
+        element:<Home/>,
       },
 {
     path:"/Shop",
@@ -49,14 +49,18 @@ const router = createBrowserRouter([
   element:<ServicePage/>,
 },
 {
-  path:"/HuntingProducts",
+  path:"/Hunting",
   element:<Hunt/>,
+},
+{
+  path:"/Industry",
+  element:<IndustryProducts/>,
 },
 
 
 
-
     ]   
+    
 
 
     
