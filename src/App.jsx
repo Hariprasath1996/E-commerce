@@ -8,6 +8,7 @@ import {AboutPage} from "./components/routes/About"
 import {ContactPage} from "./components/routes/Contact"
 import { PolicyPage } from "./components/routes/PrivacyPolicy";
 import { ServicePage } from "./components/routes/Service";
+import { Hunt } from "./components/routes/Hunting";
 
 
 const router = createBrowserRouter([
@@ -47,7 +48,10 @@ const router = createBrowserRouter([
   path:"/services",
   element:<ServicePage/>,
 },
-
+{
+  path:"/HuntingProducts",
+  element:<Hunt/>,
+},
 
 
 
