@@ -10,7 +10,7 @@ const Catagories = () => {
       </NavLink>
     </div>
     <div >
-      <NavLink >
+      <NavLink   >
       <img className=" hover:scale-105 shadow-lg contrast-50 ... hover:contrast-100 overflow-hidden z-999 hover:cursor-pointer" src="./src/images/industrial-bg.jpg" alt="" />
       <p className="text-slate-400 hover:cursor-pointer  hover:text-black">INDUSTRIAL & MANUFACTURING</p>
       </NavLink>
