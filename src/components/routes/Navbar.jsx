@@ -24,7 +24,10 @@ const Navbar = () => {
     <NavLink to="/Login" className="" >
     <CgProfile className="text-3xl hover:translate-y-1 " />
     </NavLink>
+    <NavLink to="/CartItems">
     <TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1" />
+    </NavLink>
+    
     </div>   
     </nav>
     );
