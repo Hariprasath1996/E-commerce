@@ -13,9 +13,11 @@ import { IndustryProducts } from "./components/routes/Industrial";
 // import Cart from "./components/routes/cart";
 
 
+
 const router = createBrowserRouter([
     {path: "/",
     element: <Root/>,  
+    errorElement: <ErrorPage />,
     
     children:[
       {
@@ -58,10 +60,6 @@ const router = createBrowserRouter([
   path:"/Industry",
   element:<IndustryProducts/>,
 },
-// {
-//   path:"/CartItems",
-//   element:<Cart/>,
-// },
 
 
 
