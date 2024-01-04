@@ -1,50 +1,47 @@
+import { useState } from "react";
 
+const cart = () => {
 
-import React, { useState } from 'react';
+    const [list,setList]= useState([])
+    // here we create input element
+    const [title,setTitle]=useState('')
+// onclick component for cart
+    const ClickHandlerCart = ()=>{
+        if (title) {
+            const newItem = {
+                id:"",
+                title,
+            };
+            setList([...list,newItem]);
+            setTitle("")
+            
+        }
+    } 
 
-const Cart = () => {
-const [cartItems, setCartItems] = useState([]);
+    return (  
 
-  // Function to add an item to the cart
-const addItemToCart = (item) => {
-    setCartItems([...cartItems, item]);
-};
+        <main className="w-screen h-screen flex flex-col items-center justify-center p-8 gap-2  ">
+                <section className="w-screen h-auto p-4 flex flex-wrap justify-center items-center shadow-lg bg-slate-100 gap-2">
+                    <ul className="flex flex-col gap-4">
+                    {   list.length ?  (
 
-  // Function to remove an item from the cart
+                        list.map((item)=>(
+                            <li className="text-xl font-bold"
+                            key={item.id}>
+                            {item.title}
+                            </li>
+                        ))
+                    ) : (
+                        <h2 className="text-center text-xl font-bold my-4 ">
+                            No Items Exist
+                        </h2>
+                    ) }
+                    
+                    </ul>
+                </section>
 
+        </main>
+    );
+}
 
-const removeItemFromCart = (id) => {
-    const updatedCart = [...cartItems];
-    updatedCart.splice(id, 1);
-    setCartItems(updatedCart);
-};
-
-return (
-    <div>
-    <h2>Your Cart</h2>
-    {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-    ) : (
-        <ul>
-    {cartItems.map((item, id) => (
-        <li key={id}>
-            {item.name} - ${item.price}
-            <button onClick={() => removeItemFromCart(index)}>Remove</button>
-            </li>
-        ))}
-        </ul>
-    )}
-      {/* Example items to add to the cart */}
-    {/* <div>
-        <button onClick={() => addItemToCart({ name: 'Item 1', price: 10 })}>
-        Add Item 1 to Cart
-        </button>
-        <button onClick={() => addItemToCart({ name: 'Item 2', price: 20 })}>
-        Add Item 2 to Cart
-        </button>
-    </div> */}
-    </div>
-);
-};
-
-export default Cart;
+export default cart;

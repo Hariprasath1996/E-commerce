@@ -10,12 +10,13 @@ import { PolicyPage } from "./components/routes/PrivacyPolicy";
 import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
-import Cart from "./components/routes/cart";
+// import Cart from "./components/routes/cart";
 
 
 const router = createBrowserRouter([
     {path: "/",
     element: <Root/>,  
+    
     children:[
       {
         path: "/Home",
@@ -57,10 +58,10 @@ const router = createBrowserRouter([
   path:"/Industry",
   element:<IndustryProducts/>,
 },
-{
-  path:"/CartItems",
-  element:<Cart/>,
-},
+// {
+//   path:"/CartItems",
+//   element:<Cart/>,
+// },
 
 
 
