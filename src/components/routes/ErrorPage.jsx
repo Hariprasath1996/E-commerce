@@ -5,11 +5,10 @@ const error = useRouteError();
 console.error(error);
 
 return (
-    <div id="error-page" >
-    <h1>Oops!</h1>
-    <p>Sorry, an unexpected error has occurred.</p>
+    <div className="flex flex-col justify-center items-center w-screen h-screen " id="error-page" >
+    <img src="./src/images/Error-image.avif" alt="" />
     <p>
-        <i>{error.statusText || error.message}</i>
+        <i className="text-xl font-bold">{error.statusText || error.message}</i>
     </p>
     </div>
 );
