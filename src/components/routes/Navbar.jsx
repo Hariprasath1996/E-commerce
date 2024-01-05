@@ -1,9 +1,6 @@
-
-// import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
-
 const Navbar = () => {
     return ( 
     <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
