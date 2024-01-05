@@ -2,6 +2,7 @@ import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+
     return ( 
     <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
     <div className="logo-container w-auto h-25 flex flex-row items-center justify-center hover:  " >
@@ -16,8 +17,8 @@ const Navbar = () => {
     </ul>
     </div>
     <div className="  icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
-    <input  className="w-50 h-10 hover:animate-pulse  bg-white text-black rounded font-bold border-4 border-indigo-300/100 ... text-xl  " type="text" placeholder=" Search Here... " />
-    <NavLink to="">
+    <input  className="w-50 h-10   bg-white text-black rounded font-bold border-4 border-indigo-300/100 ... text-xl  " type="text" placeholder=" Search Here... " />
+    <NavLink >
     <button className="bg-cyan-500 px-6 py-1 font-bold shadow-xl text-white text-lg rounded-md hover:animate-pulse ">Submit</button>
     </NavLink>
     <NavLink to="/Login" className="" >
