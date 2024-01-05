@@ -10,7 +10,8 @@ import { PolicyPage } from "./components/routes/PrivacyPolicy";
 import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
-// import Cart from "./components/routes/cart";
+import ErrorPage from "./components/routes/ErrorPage";
+import { Cart } from "./components/routes/cart";
 
 
 
@@ -60,6 +61,11 @@ const router = createBrowserRouter([
   path:"/Industry",
   element:<IndustryProducts/>,
 },
+{
+  path:"/cart",
+  element:<Cart/>,
+},
+
 
 
 
