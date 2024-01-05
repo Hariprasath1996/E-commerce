@@ -35,6 +35,7 @@ return(
             {item.name} - ${item.price}
             <button onClick={() => removeItemFromTheCart(index)}>Remove</button>
         </li>
+        
         ))}
         <p>Total Price: ${totalPrice}</p>
     </ul>
