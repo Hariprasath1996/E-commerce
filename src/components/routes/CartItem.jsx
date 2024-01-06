@@ -1,21 +1,21 @@
 
 
-const CartItems =({name,quantity,image,price})=>{
+const cartItems =({name,quantity,image,price})=>{
     return(
         <>
         <main className="Cart-items-container">
             <img src={image}alt={name} />
             <div className="items-details">
-                <Span>
+                <h1>
                     {name}
-                </Span>
-                <Span>
-                    {quantity}* ${price}
-                </Span>
+                </h1>
+                <p>
+                {quantity}* ${price}
+                </p>
             </div>
         </main>
         </>
     )
 
 }
-export {CartItems}
+export {cartItems}

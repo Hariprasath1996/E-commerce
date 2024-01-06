@@ -11,7 +11,7 @@ import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
 import ErrorPage from "./components/routes/ErrorPage";
-
+import {cartItems} from "./components/routes/CartItem"
 
 
 
@@ -61,12 +61,15 @@ const router = createBrowserRouter([
   path:"/Industry",
   element:<IndustryProducts/>,
 },
+{
+  path:"/cart",
+  element:<cartProducts/>,
+},
 
 
 
 
-
-    ]   
+]   
     
 
 

@@ -4,7 +4,7 @@ const ServicePage = () => {
 return (
     <div className='w-screen h-auto flex flex-col justify-center items-center bg-white p-6 text-lg gap-8 '>
     <h1 className=' text-black font-bold text-6xl p-2  flex flex-row gap-4 justify-center items-center'>Terms And Conditions</h1>
-    <p>
+    <p className='font-bld text-xl text-green-800 '>
 Contest winner will be announced  on Skullcandy.in website on contest page.
 To participate in the contest user require to tag his/her Love and Like/Follow our social media page.
 No change and encashment requests will be entertained

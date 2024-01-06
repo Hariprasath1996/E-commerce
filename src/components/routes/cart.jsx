@@ -1,6 +1,6 @@
 import { useState } from "react"
-
-const cart = ()=>{
+import {cartItems} from "./CartItem"
+const cartProducts = ()=>{
     const [cartItems,setCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
     
@@ -27,6 +27,7 @@ const cart = ()=>{
 };
 
 return(
+
     <main>
         <h1>SHOPPING CART ITEMS</h1>
         <ul>
@@ -42,3 +43,4 @@ return(
     </main>
 )
 }
+export {cartProducts}
