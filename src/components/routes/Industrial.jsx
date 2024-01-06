@@ -1,4 +1,7 @@
 import { IndustrialProducts } from "../../constants/industries";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 
 const IndustryProducts = () => {
     const Item = (props) => {
@@ -19,6 +22,8 @@ const IndustryProducts = () => {
     return (
         
     <div>
+        <Navbar/>
+        <Outlet/>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
         {IndustrialProducts.map((item,id) => {
             return (
@@ -32,6 +37,7 @@ const IndustryProducts = () => {
             );
         })}
         </div>
+        <Footer/>
     </div>
     );
 };

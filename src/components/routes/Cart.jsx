@@ -1,4 +1,6 @@
-
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 import React, { useState } from 'react';
 import Product from './CartProducts';
 import Cart from "./CartItem"
@@ -23,15 +25,21 @@ const removeFromCart = (index) => {
 // ];
 
 return (
-    <div>
-    <h1>Online Store</h1>
-    <div>
+    <>
+    <Navbar/>
+        <Outlet/>
+    <div  >
+    <h1 className="text-5xl flex flex-row justify-center border-stone-950 bg-slate-800 p-4 text-white ">Online Store</h1>
+    <div className="flex flex-wrap w-screen h-auto justify-center items-center  gap-14 ">
         {AllProducts.map((product) => (
         <Product key={product.id} product={product} addToCart={addToCart} />
         ))}
     </div>
     <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
     </div>
+    <Footer/>
+    </>
+
 );
 };
 

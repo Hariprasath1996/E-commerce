@@ -3,11 +3,8 @@ import { useState } from "react";
 const FaqProducts = () => {
     const Faq= (items) => {
         const [Show,setShow]=useState(false)
-        
-        const ClickFaqHandler =()=>{
-            setShow((prev)=>!(prev))
-        }
     return (
+        <>
         <div className="  bg-red-100 w-screen h-auto p-2 mb-5 flex flex-col items-center
         hover:scale-105 gap-1 shadow-lg rounded-lg overflow-hidden justify-center ">
         <img className="  w-74 h-64 object-center" src="./src/images/FAQ.png " />
@@ -18,6 +15,8 @@ const FaqProducts = () => {
         </div>
         { Show || <p className="text-yellow-800 font-bold text-2xl  p-2">{items.answer}</p> }
         </div>
+        </>
+        
     );
     };
     return (

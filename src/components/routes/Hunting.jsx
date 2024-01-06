@@ -1,4 +1,7 @@
 import { HuntingProducts } from "../../constants/Hunting";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 
 const Hunt = () => {
     const Item = (props) => {
@@ -19,6 +22,8 @@ const Hunt = () => {
     return (
         
     <div>
+        <Navbar/>
+        <Outlet/>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
         {HuntingProducts.map((item,id) => {
             return (
@@ -32,6 +37,7 @@ const Hunt = () => {
             );
         })}
         </div>
+        <Footer/>
     </div>
     );
 };

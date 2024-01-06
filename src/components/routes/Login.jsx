@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { CgProfile } from "react-icons/cg";
-
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 const LoginPage = ()=>{
 
     // create two variables that takes string  and have a function in use state
@@ -20,9 +22,11 @@ const LoginPage = ()=>{
 
 
     return (
-                
+        <>
+        <Navbar/>
+        <Outlet/> 
         <div className=' w-screen h-auto flex flex-col justify-center items-center bg-cyan-400 p-6 text-lg gap-8 '>
-            <h2 className=' text-black font-bold text-2xl p-2  flex flex-row gap-4 justify-center items-center'>  <CgProfile className='text-red-600' />Profile-page</h2>
+        <h2 className=' text-black font-bold text-2xl p-2  flex flex-row gap-4 justify-center items-center'>  <CgProfile className='text-red-600' />Profile-page</h2>
     <form className=' w-screen h-auto flex flex-col justify-center items-center p-4  ' onSubmit={handleLogin}>
         <label className=' h-auto flex flex-row justify-center items-center text-black font-bold text-xl gap-x-8 p-3 w-[45rem]   '>
         User-ID :  
@@ -55,8 +59,9 @@ const LoginPage = ()=>{
         <br/>
         <button className='w-auto h-auto  hover:cursor-pointer hover:translate-y-1 px-6 py-2  bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ...   flex flex-col justify-center items-center ' type="submit">Login</button>
     </form>
-        </div>
-
+    </div>
+        <Footer/>
+        </>
         );
 
 };

@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 import AllProducts from "../../constants/AllProducts";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 
 const ShopProducts = () => {
     const Item = (props) => {
@@ -14,7 +17,7 @@ const ShopProducts = () => {
             {props.price}
         </span>
         <NavLink to="" >
-        <button className="hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-yellow-400/100 ... mb-3">ADD TO CART</button>
+        <button  className="hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-yellow-400/100 ... mb-3">ADD TO CART</button>
         </NavLink>
         
         </div>
@@ -23,9 +26,12 @@ const ShopProducts = () => {
     return (
         
     <div>
+        <Navbar/>
+        <Outlet/>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
         {AllProducts.map((item,id) => {
             return (
+            
             <Item
                 key={id}
                 id={item.id}
@@ -36,6 +42,7 @@ const ShopProducts = () => {
             );
         })}
         </div>
+        <Footer/>
     </div>
     );
 };

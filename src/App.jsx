@@ -14,18 +14,20 @@ import ErrorPage from "./components/routes/ErrorPage";
 import ListItems from "./components/routes/Cart"
 
 const router = createBrowserRouter([
+  {
+    path: "/Home",
+    element:<Home/>,
+  },
     {path: "/",
     element: <Root/>,  
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />},
     
-    children:[
-      {
-        path: "/Home",
-        element:<Home/>,
-      },
 {
   path:"/Shop",
   element:<ShopProducts/>,
+  children :[
+  
+  ]
 },
 {
   path:"/faq",
@@ -63,9 +65,11 @@ const router = createBrowserRouter([
 path:"/cart",
 element:<ListItems/>,
 },
-]   
-},
+
+
 ]);
+
+
 const app=()=>{
 return (
 <RouterProvider router={router} />

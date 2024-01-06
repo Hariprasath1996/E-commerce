@@ -1,8 +1,13 @@
 import React from 'react';
-
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Outlet } from "react-router-dom";
 const PolicyPage = () => {
 return (
-    <div className='w-screen h-auto flex flex-col justify-center items-center bg-white p-6 text-lg gap-8 '>
+    <>
+    <Navbar/>
+    <Outlet/> 
+        <div className='w-screen h-auto flex flex-col justify-center items-center bg-white p-6 text-lg gap-8 '>
     <h1 className=' text-black font-bold text-8xl p-2  flex flex-row gap-4 justify-center items-center' >WARRANTY POLICY</h1>
     <p>How can I cancel my order?
 The cancellation of your order is only possible pre-dispatch, by mailing us or calling the toll no. 011-42700400 and confirming the acceptance of the cancellation request. (During working hour , i.e. Mon-Friday, 10:00am – 4:00pm, and except the Govt. holidays) You can also email at customercare@brandeyes.in
@@ -52,6 +57,9 @@ If a replacement for the defective product is not in stock, Brandeyes reserves t
 
 Skullcandy regularly changes the models, colorways, and styles of its Products and cannot guarantee the availability of an exact replacement for any Product.</p>
     </div>
+    <Footer/>
+    </>
+
 );
 };
 
