@@ -49,8 +49,6 @@ const LoginPage = ()=>{
         Confirm-Password :
         <input className=' text-black font-bold text-xl p-2 rounded-md '
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
             required
         />
         </label>

@@ -11,9 +11,7 @@ import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
 import ErrorPage from "./components/routes/ErrorPage";
-import {cartItems} from "./components/routes/CartItem"
-
-
+import listItems from "./components/routes/List";
 
 const router = createBrowserRouter([
     {path: "/",
@@ -62,28 +60,16 @@ const router = createBrowserRouter([
   element:<IndustryProducts/>,
 },
 {
-  path:"/cart",
-  element:<cartProducts/>,
+path:"/cart",
+element:<listItems/>,
 },
-
-
-
-
 ]   
-    
-
-
-    
-  },
-
-
+},
 ]);
-
 const app=()=>{
-  return (
-    
-    <RouterProvider router={router} />
-  )
+return (
+<RouterProvider router={router} />
+)
 }
 export default app;
 
