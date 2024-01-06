@@ -11,7 +11,7 @@ import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
 import ErrorPage from "./components/routes/ErrorPage";
-import listItems from "./components/routes/List";
+import ListItems from "./components/routes/Cart"
 
 const router = createBrowserRouter([
     {path: "/",
@@ -24,12 +24,12 @@ const router = createBrowserRouter([
         element:<Home/>,
       },
 {
-    path:"/Shop",
-    element:<ShopProducts/>,
+  path:"/Shop",
+  element:<ShopProducts/>,
 },
 {
-    path:"/faq",
-    element:<FaqProducts/>,
+  path:"/faq",
+  element:<FaqProducts/>,
 },
 {
   path:"/Login",
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
 },
 {
 path:"/cart",
-element:<listItems/>,
+element:<ListItems/>,
 },
 ]   
 },

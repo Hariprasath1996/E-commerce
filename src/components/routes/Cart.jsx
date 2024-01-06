@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import Product from './CartProducts';
 import Cart from "./CartItem"
+import AllProducts from '../../constants/AllProducts';
 
-const listItems = () => {
+const ListItems = () => {
 const [cartItems, setCartItems] = useState([]);
 
 const addToCart = (product) => {
@@ -16,17 +17,16 @@ const removeFromCart = (index) => {
     setCartItems(updatedCart);
 };
 
-const products = [
-    { id: 1, name: 'Product 1', description: 'Description 1', price: 10 },
-    { id: 2, name: 'Product 2', description: 'Description 2', price: 15 },
-    // Add more products as needed
-];
+// const products = [
+//     { id: 1, name: 'Product 1', description: 'Description 1', price: 10 },
+//     { id: 2, name: 'Product 2', description: 'Description 2', price: 15 },
+// ];
 
 return (
     <div>
     <h1>Online Store</h1>
     <div>
-        {products.map((product) => (
+        {AllProducts.map((product) => (
         <Product key={product.id} product={product} addToCart={addToCart} />
         ))}
     </div>
@@ -35,4 +35,4 @@ return (
 );
 };
 
-export default listItems;
+export default ListItems;
