@@ -23,16 +23,21 @@
 
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Cart = ({ cartItems, removeFromCart }) => {
 return (
-    <div>
-    <h2>Shopping Cart</h2>
+    <div className=' max-w-sm mx-auto bg-white w-96 ml-10 mt-4 mb-8 flex flex-col items-center
+    hover:scale-105 gap-4 shadow-lg rounded-lg overflow-hidden justify-evenly'>
+    <h2 className=''>Shopping Cart</h2>
     <ul>
-        {cartItems.map((item, index) => (
-        <li key={index}>
-            {item.name} - {item.price} $
-            <button onClick={() => removeFromCart(index)}>Remove</button>
+        {cartItems.map((item, id) => (
+        <li key={id}>
+        <img className='w-74 h-64 object-center' src={item.image} alt="#" />
+            {item.name} - {item.price} $ 
+    <NavLink  >
+    <button onClick={() => removeFromCart(index)}>Remove</button>
+        </NavLink>     
         </li>
         ))}
     </ul>

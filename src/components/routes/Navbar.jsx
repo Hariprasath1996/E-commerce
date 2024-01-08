@@ -1,6 +1,7 @@
 import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
 
     return ( 
@@ -24,7 +25,7 @@ const Navbar = () => {
     <NavLink to="/Login" className="" >
     <CgProfile className="text-3xl hover:translate-y-1 hover:animate-pulse " />
     </NavLink>
-    <NavLink to="/cart">
+    <NavLink to="/addToCart">
     <TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" />
     </NavLink>
     
