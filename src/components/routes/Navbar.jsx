@@ -2,7 +2,7 @@ import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({size}) => {
 
     return ( 
     <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
@@ -25,9 +25,13 @@ const Navbar = () => {
     <NavLink to="/Login" className="" >
     <CgProfile className="text-3xl hover:translate-y-1 hover:animate-pulse " />
     </NavLink>
-    <NavLink to="/addToCart">
-    <TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" />
+    <div>
+    <NavLink  >
+    <span className="flex flex-row justify-end">{size}</span>
+        <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
     </NavLink>
+    </div>
+    
     
     </div>   
     </nav>
