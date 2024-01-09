@@ -8,9 +8,17 @@ import { useState } from "react";
 const ShopProducts = ( ) => {
 const [cart,setCart]=useState([])
 
+
+// items added to the cart
+
+const addToCart =(item)=>{
+    setCart([...cart,item])
+    }
+
+// clickhandler for adding items
 const clickHanndler=(item)=>{
 
-
+console.log(item);
 }
 
     const Item = (props) => {
