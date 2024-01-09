@@ -96,12 +96,12 @@ const  AllProducts = [
     image:"https://img.fruugo.com/product/2/49/321250492_max.jpg"
     
 },
-{
-    id: 16,
-    name: " GAMING-WIRED & BT HEADSET",
-    price: 'price: ₹ 3200 ',
-    image:"https://cdn.shopify.com/s/files/1/0112/1203/0016/products/ONIKUMA-K10-Professional-Games-Headset-RGB-Colorful-Lighting-Mic-PC-Phone-PS4-XBOX-Switch-Gamer-Wired-Headphone-2_x688@2x.png"
-}   
+// {
+//     id: 16,
+//     name: " GAMING-WIRED & BT HEADSET",
+//     price: 'price: ₹ 3200 ',
+//     image:"https://cdn.shopify.com/s/files/1/0112/1203/0016/products/ONIKUMA-K10-Professional-Games-Headset-RGB-Colorful-Lighting-Mic-PC-Phone-PS4-XBOX-Switch-Gamer-Wired-Headphone-2_x688@2x.png"
+// }   
 
 
 ]
