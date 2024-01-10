@@ -66,3 +66,5 @@ const signInForm =()=>{
         </main>
     )
 }
+
+export default signInForm ;
