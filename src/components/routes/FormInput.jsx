@@ -9,8 +9,7 @@ return(
     <input className="input-form" type="text" {...inputOptions} onchange={onchange} />
     {label && (
         <label htmlFor={`${id}`}
-
-        // dynamic class name  
+// dynamic class name  
         className={`${value.length ? "shrink" : "" } form-input-label`}>
             {label}
         </label>
