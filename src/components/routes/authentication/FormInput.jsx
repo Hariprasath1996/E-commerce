@@ -1,6 +1,6 @@
 
 
-const formInput = ({label,inputOptions,onchange})=>{
+const FormInput = ({label,inputOptions,onchange})=>{
     // here input options gives the type of inputs like :  email, text,number  ,something etc....we can  customize that  
     const {id,value} = inputOptions ;
 }
@@ -10,11 +10,11 @@ return(
     {label && (
         <label htmlFor={`${id}`}
 // dynamic class name  
-        className={`${value.length ? "shrink" : "" } form-input-label`}>
+        className={`${value.length ? "shrink" : ''} form-input-label`}>
             {label}
         </label>
     )}
     </main>
     
 )
-export default formInput;
+export default FormInput;
