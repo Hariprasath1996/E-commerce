@@ -12,6 +12,7 @@ import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
 import ErrorPage from "./components/routes/ErrorPage";
 import CartPage from "./components/routes/Cart";
+import Authentication from "./components/routes/authentication/authentication";
 
 
 
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
 },
 {
   path:"/Login",
-  element:<LoginPage/>,
+  element:<Authentication/>,
 },
 {
   path:"/ABOUT",

@@ -1,5 +1,8 @@
+
+// functions
 import FormInput from "../authentication/FormInput";
 import Button from "../authentication/button";
+import { signInWithGooglePopup } from "../../../constants/Fire-base/firebase";
 import { useState } from "react";
 
 const defaultFormFields={
@@ -7,11 +10,16 @@ const defaultFormFields={
     password:"",
 }
 
-const signInForm =()=>{
+const SignInForm =()=>{
     const [formFields,SetFormFields]=useState(defaultFormFields)
     const {email,password}=formFields;
 
-    const signInWithGoogle=async()=>{};
+    const signInWithGoogle=async()=>{
+        const result =  signInWithGooglePopup()
+        console.log(result);
+    };
+
+
     const submitHandler=async(e)=>{
         e.preventDefault();
     }
@@ -67,4 +75,4 @@ const signInForm =()=>{
     )
 }
 
-export default signInForm ;
+export default SignInForm ;
