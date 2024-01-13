@@ -6,7 +6,7 @@ const FormInput = ({ label, inputOptions, onChange }) => {
 
     return (
         <main className="group">
-            <input className="input-form" type="text" {...inputOptions} onChange={onChange} />
+            <input className="input-form"  {...inputOptions} onChange={onChange} />
             {label && (
                 <label htmlFor={`${id}`}
                        // dynamic class name

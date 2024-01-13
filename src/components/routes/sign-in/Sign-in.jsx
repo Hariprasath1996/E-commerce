@@ -5,6 +5,7 @@ import Button from "../authentication/button";
 import { signInWithGooglePopup } from "../../../constants/Fire-base/firebase";
 import { useState } from "react";
 
+
 const defaultFormFields={
     email:"",
     password:"",
@@ -15,8 +16,8 @@ const SignInForm =()=>{
     const {email,password}=formFields;
 
     const signInWithGoogle=async()=>{
-        const result =  signInWithGooglePopup()
-        console.log(result);
+        const {user} = await signInWithGooglePopup()
+        console.log(user);
     };
 
 
