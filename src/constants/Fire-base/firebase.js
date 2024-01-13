@@ -47,6 +47,7 @@ country: "USA"});
 const createUserDocumentFromAuth=async(userAuth)=>{
   if(! userAuth) return;
 
+  // here  userAuth.uid is checking weather the id is already there or not
   const userDocRef = doc(ecommerceDb,'users',userAuth.uid);
   console.log(userDocRef);
 
