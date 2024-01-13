@@ -2,7 +2,7 @@
 // functions
 import FormInput from "../authentication/FormInput";
 import Button from "../authentication/button";
-import { signInWithGooglePopup } from "../../../constants/Fire-base/firebase";
+import { signInWithGooglePopup,createUserDocumentFromAuth } from "../../../constants/Fire-base/firebase";
 import { useState } from "react";
 
 
@@ -17,7 +17,7 @@ const SignInForm =()=>{
 
     const signInWithGoogle=async()=>{
         const {user} = await signInWithGooglePopup()
-        console.log(user);
+      const userDocRef =  await createUserDocumentFromAuth(user)
     };
 
 

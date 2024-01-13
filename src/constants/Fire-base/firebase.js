@@ -29,6 +29,49 @@ const signInWithGooglePopup=()=>{
 
 
 
-export {signInWithGooglePopup}
 
-// firebase data base added
+
+// firestore data base added
+const ecommerceDb=getFirestore(ecommerceApp)
+
+
+const addData=async(collection , id ,val)=>{
+  const res = await setDoc(doc(ecommerceDb, collection,id),val);
+    
+
+  console.log(res);
+}
+addData('cities','LA',{name: "Los Angeles",
+state: "CA",
+country: "USA"});
+const createUserDocumentFromAuth=async(userAuth)=>{
+  if(! userAuth) return;
+
+  const userDocRef = doc(ecommerceDb,'users',userAuth.uid);
+  console.log(userDocRef);
+
+  //use snapshot is check weather the user is already in the list or not
+  const userSnapShot = await getDoc(userDocRef)
+  console.log(userSnapShot);
+  console.log(userSnapShot.exists());
+
+
+  if ( ! userSnapShot.exists()) {
+    const {displayName,email} = userAuth;
+    const createdAt = new Date ();
+    try {
+      await setDoc (userDocRef,
+        {
+          displayName,
+          email,
+          createdAt,
+        })
+    } catch (err){
+      console.log('error creating the user',err.message);
+    }
+    
+  }
+return userDocRef;
+}
+
+export {signInWithGooglePopup,createUserDocumentFromAuth}
