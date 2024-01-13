@@ -49,14 +49,9 @@ const createUserDocumentFromAuth=async(userAuth)=>{
 
   // here  userAuth.uid is checking weather the id is already there or not
   const userDocRef = doc(ecommerceDb,'users',userAuth.uid);
-  console.log(userDocRef);
-
   //use snapshot is check weather the user is already in the list or not
   const userSnapShot = await getDoc(userDocRef)
-  console.log(userSnapShot);
-  console.log(userSnapShot.exists());
-
-
+  //  if the id is not came below code will run 
   if ( ! userSnapShot.exists()) {
     const {displayName,email} = userAuth;
     const createdAt = new Date ();
@@ -72,6 +67,7 @@ const createUserDocumentFromAuth=async(userAuth)=>{
     }
     
   }
+  //  if the id is already is there i simply return it 
 return userDocRef;
 }
 
