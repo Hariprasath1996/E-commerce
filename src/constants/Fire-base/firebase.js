@@ -39,7 +39,7 @@ await signInWithPopup(eCommerceAuth,googleProvider)
 
 
 
-// firestore data base added
+// fireStore data base added
 const ecommerceDb=getFirestore(ecommerceApp)
 
 

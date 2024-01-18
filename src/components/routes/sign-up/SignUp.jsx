@@ -2,26 +2,42 @@
 // functions
 import FormInput from "../authentication/FormInput";
 import Button from "../authentication/button";
-import { signInWithGooglePopup } from "../../../constants/Fire-base/firebase";
+import { createAuthUserWithEmailAndPassword,createUserDocumentFromAuth } from "../../../constants/Fire-base/firebase";
 import { useState } from "react";
 
 const defaultFormFields={
+    displayname : "",
     email:"",
     password:"",
+    confirmPassword : ""
 }
 
 const SignUpForm =()=>{
     const [formFields,SetFormFields]=useState(defaultFormFields)
-    const {email,password}=formFields;
-
-    const signInWithGoogle=async()=>{
-        const result =  signInWithGooglePopup()
-        console.log(result);
-    };
+    const {displayname,email,password,confirmPassword}=formFields; 
 
 
     const submitHandler=async(e)=>{
         e.preventDefault();
+        if (! email || ! password){
+            alert('password do not match')
+            return;
+        }
+        try {
+            const user = createAuthUserWithEmailAndPassword (email,password)
+            console.log(user);
+            const userDocRef = await createUserDocumentFromAuth (user,{
+                displayname,
+            });
+        } catch (error) {
+            console.log('error occurred during ate user ' , error . message );
+            if
+                (error.code === 'auth/email-already-in-use'){
+                    alert ('email already in use')
+                }
+            
+            console.log(error.code);
+        }
     }
 
     const  changeHandler =(e)=>{
@@ -48,6 +64,21 @@ const SignUpForm =()=>{
                     onchange={changeHandler}
                         />
                         <FormInput 
+                    label ='Email'   
+                    inputOptions ={
+                        {
+                            type : 'email',
+                            required:true ,
+                            id:'email',
+                            name:'email',
+                            value: email
+                        }
+                    }
+                    onchange={changeHandler}
+                        />
+
+
+                        <FormInput 
                     label ='password'   
                     inputOptions ={
                         {
@@ -66,22 +97,17 @@ const SignUpForm =()=>{
                         {
                             type : 'password',
                             required:true ,
-                            id:'password',
-                            name:'password',
-                            value: password
+                            id:'confirm-password',
+                            name:'confirm-password',
+                            value: confirmPassword
                         }
                     }
                     onchange={changeHandler}
                         />
                         <div className="btn-box">
                             <Button type='submit'>
-                                Sign in
+                                Sign Up
                             </Button>
-
-
-                            {/* <Button buttonType='google' type='button' onClick={signInWithGoogle} className="google-sign-box">
-                                Google Sign In
-                            </Button> */}
                         </div>
             </form>
         </main>
