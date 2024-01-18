@@ -52,8 +52,14 @@ const addData=async(collection , id ,val)=>{
 addData('cities','LA',{name: "Los Angeles",
 state: "CA",
 country: "USA"});
-const createUserDocumentFromAuth=async(userAuth)=>{
-  if(! userAuth) return;
+const createUserDocumentFromAuth=async(userAuth, 
+  // how to pass additional information , use this methods its fully based on js
+  additionalUserInfo={
+
+}
+)=>{
+
+  if(! userAuth ) return;
 
   // here  userAuth.uid is checking weather the id is already there or not
   const userDocRef = doc(ecommerceDb,'users',userAuth.uid);
@@ -69,6 +75,7 @@ const createUserDocumentFromAuth=async(userAuth)=>{
           displayName,
           email,
           createdAt,
+          ...additionalUserInfo,
         })
     } catch (err){
       console.log('error creating the user',err.message);

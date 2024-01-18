@@ -24,11 +24,12 @@ const SignUpForm =()=>{
             return;
         }
         try {
-            const user = createAuthUserWithEmailAndPassword (email,password)
+            const {user} = createAuthUserWithEmailAndPassword (email,password)
             console.log(user);
             const userDocRef = await createUserDocumentFromAuth (user,{
                 displayname,
             });
+            SetFormFields (defaultFormFields);
         } catch (error) {
             console.log('error occurred during ate user ' , error . message );
             if
