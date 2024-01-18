@@ -35,14 +35,14 @@ const SignUpForm =()=>{
             <span>SignUp With Your Email and Password</span>
             <form onSubmit={submitHandler}>
                 <FormInput 
-                    label ='Email'   
+                    label ='Display Name'   
                     inputOptions ={
                         {
-                            type : 'email',
+                            type : 'text',
                             required:true ,
-                            id:'email',
-                            name:'email',
-                            value: email
+                            id:'display-name',
+                            name:'display-name',
+                            value: displayname
                         }
                     }
                     onchange={changeHandler}
