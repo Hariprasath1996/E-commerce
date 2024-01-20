@@ -2,7 +2,7 @@ import { Children } from "react";
 import { createContext,useContext,useEffect,useState } from "react";
 const CartContext =createContext();
 
-const value={}
+
 
 const addCartItem =(cartItems,ProductToAdd)=>{
 
@@ -30,8 +30,12 @@ const [cartItems,setCartItems]=useState([]);
 const [cartCount,setCartCount]=(0);
 const [cartTotal,setCartTotal]=(0)
 
-
-
+const addItemToCart=(ProductToAdd)=>{
+    setCartItems(addCartItem(cartItems,ProductToAdd))
+}
+const value={
+    cartItems,addItemToCart
+}
 
     return <CartContext.Provider value={value}>
         {Children}
