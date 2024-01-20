@@ -5,7 +5,8 @@ import AllProducts  from "../../../constants/AllProducts";
 
 
 
-const productsContext = createContext()
+const useProductsContext = createContext(
+)
 
 
 const ProductsProvider = ({children})=>{
@@ -14,14 +15,14 @@ const ProductsProvider = ({children})=>{
 
 
     const Values = {products,setProducts}
-    return <productsContext.Provider value={Values}>
+    return <useProductsContext.Provider value={Values}>
         {children}
-    </productsContext.Provider>
+    </useProductsContext.Provider>
 };
 
 // custom hook
 const useProductsGlobalContext = ()=>{
-    return useContext (productsContext);
+    return useContext (useProductsContext);
 };
 
 export {ProductsProvider,useProductsGlobalContext}

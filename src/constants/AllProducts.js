@@ -76,26 +76,26 @@ const  AllProducts = [
     name: "Tube Headset",
     price: 'price: ₹ 2500 ',
     image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/feafe7eb-1d21-4196-8ee7-83336ed86271_small.jpg"
-    
-},{
-    id: 13,
-    name: "Acoustic Tube Headset",
-    price: 'price: ₹ 1800 ',
-    image:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/75/794/FALLING-NATURAL-PLUGS-black__59340.1698770138.jpg?c=2"
-    
-},{
-    id: 14,
-    name: " Custom Molded Earplugs",
-    price: 'price: ₹ 2300 ',
-    image:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/80/909/Decibullz-Pro-Post-Black_Final__93678.1698770142.jpg?c=2"
-    
-},{
-    id: 15,
-    name: " GAMING BT HEADSET",
-    price: 'price: ₹ 12,000 ',
-    image:"https://img.fruugo.com/product/2/49/321250492_max.jpg"
-    
 },
+// },{
+//     id: 13,
+//     name: "Acoustic Tube Headset",
+//     price: 'price: ₹ 1800 ',
+//     image:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/75/794/FALLING-NATURAL-PLUGS-black__59340.1698770138.jpg?c=2"
+    
+// },{
+//     id: 14,
+//     name: " Custom Molded Earplugs",
+//     price: 'price: ₹ 2300 ',
+//     image:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/80/909/Decibullz-Pro-Post-Black_Final__93678.1698770142.jpg?c=2"
+    
+// },{
+//     id: 15,
+//     name: " GAMING BT HEADSET",
+//     price: 'price: ₹ 12,000 ',
+//     image:"https://img.fruugo.com/product/2/49/321250492_max.jpg"
+    
+// },
 // {
 //     id: 16,
 //     name: " GAMING-WIRED & BT HEADSET",
