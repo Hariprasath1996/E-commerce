@@ -89,4 +89,4 @@ const createUserDocumentFromAuth=async(userAuth,
 return userDocRef;
 }
 
-export {signInWithGooglePopup,createUserDocumentFromAuth,createAuthUserWithEmailAndPassword,SignInAuthUserWithEmailAndPassword,onAuthStateChangedListener,signOut}
+export {signInWithGooglePopup,createUserDocumentFromAuth,createAuthUserWithEmailAndPassword,SignInAuthUserWithEmailAndPassword,onAuthStateChanged,signOutUser}

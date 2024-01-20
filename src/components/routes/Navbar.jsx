@@ -1,8 +1,14 @@
-import { CgProfile } from "react-icons/cg";
+// import { CgProfile } from "react-icons/cg";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
-
+import { useUserGlobalContext } from "./context/user.context";
+import { signOutUser } from "../../constants/Fire-base/firebase"
+import { Link } from "react-router-dom";
 const Navbar = () => {
+const {currentUser}= useUserGlobalContext()
+const signOutHandler = async()=>{
+    const response =await signOutUser()
+}
 
     return ( 
     <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
@@ -11,7 +17,6 @@ const Navbar = () => {
     </div>
     <div  >
     <ul className="menu-bar w-auto h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white   ">
-    {/* <NavLink to="/Home" className="Home hover:animate-pulse w-auto hover:cursor-pointer  hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... " >HOME</NavLink> */}
     <NavLink to="/Shop"  className="Shop hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ...  " >SHOP NOW</NavLink>
     <NavLink to="/ABOUT" className="About hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ABOUT </NavLink>
     <NavLink to="/CONTACT"className="Contact hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">CONTACT</NavLink> 
@@ -23,7 +28,24 @@ const Navbar = () => {
     <button className="bg-cyan-500 px-6 py-1 font-bold shadow-xl text-white text-lg rounded-md hover:animate-pulse ">Submit</button>
     </NavLink>
     <NavLink to="/Login" className="" >
-    <CgProfile className="text-3xl hover:translate-y-1 hover:animate-pulse " />
+    {/* <CgProfile className="text-3xl hover:translate-y-1 hover:animate-pulse " /> */}
+    {
+        currentUser ? (<li>
+            <span className="Nav-link"
+            onClick={signOutHandler}>
+            </span>
+        SIGN OUT
+        </li>)
+        : (
+            <li className="Nav-item ">
+                <Link className="Nav-link  bg-white px-2 py-1 text-black rounded-full font-bold border-4 border-indigo-300/100 ... text-xl  "
+            to="/Login">
+                SIGN IN
+                </Link>
+            
+            </li>
+        )
+    }
     </NavLink>
     <div>
     <NavLink to="/cart"  >
