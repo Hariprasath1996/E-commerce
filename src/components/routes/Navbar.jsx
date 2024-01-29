@@ -4,14 +4,21 @@ import { NavLink } from "react-router-dom";
 import { useUserGlobalContext } from "./context/user.context";
 import { signOutUser } from "../../constants/Fire-base/firebase"
 import { Link } from "react-router-dom";
+import { useCartGlobalContext } from "./context/cart.context";
+// import { useContext } from "react";
+
+
+
 const Navbar = () => {
 const {currentUser}= useUserGlobalContext()
 const signOutHandler = async()=>{
     const response =await signOutUser()
 }
-
+const {isCartOpen,setIsCartOpen,cartCount} =useCartGlobalContext;
+const toggleCartContainer = ()=>setIsCartOpen(!isCartOpen);
     return ( 
-    <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
+        <>
+        <nav className=' w-screen h-auto flex  items-center justify-around p-2 bg-gradient-to-r from-cyan-500 to-blue-500 ...'  >
     <div className="logo-container w-auto h-25 flex flex-row items-center justify-center hover:  " >
     <a  href="https://youtu.be/CIpIQVJkanI?si=liWiGQiMnodJiRpj " target="_blank"><img className=" hover:animate-pulse rounded-lg   "  src="./src/images/skull-candy.png " alt="#" /></a> 
     </div>
@@ -47,16 +54,16 @@ const signOutHandler = async()=>{
         )
     }
     </NavLink>
-    <div>
+    <div className="cart-container" onClick={toggleCartContainer}>
     <NavLink to="/cart"  >
-    <span className="flex flex-row justify-end">{0}</span>
-        <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
+    <span className="flex flex-row justify-end">{cartCount}</span>
+    <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
     </NavLink>
     </div>
-    
-    
     </div>   
     </nav>
+        </>
+    
     );
 }
 
