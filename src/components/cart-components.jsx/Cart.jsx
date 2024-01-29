@@ -12,3 +12,5 @@ return(
     </main>
 )
 }
+ 
+export default CartItem ;

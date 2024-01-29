@@ -11,7 +11,7 @@ import { ServicePage } from "./components/routes/Service";
 import { Hunt } from "./components/routes/Hunting";
 import { IndustryProducts } from "./components/routes/Industrial";
 import ErrorPage from "./components/routes/ErrorPage";
-import CartPage from "./components/routes/Cart";
+import CartItem from "./components/cart-components.jsx/Cart";
 import Authentication from "./components/routes/authentication/authentication";
 
 
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
 },
 {
   path:"/cart",
-  element:<CartPage/>,
+  element:<CartItem/>,
 },
 
 

@@ -49,7 +49,7 @@ const signOutHandler = async()=>{
     </NavLink>
     <div>
     <NavLink to="/cart"  >
-    <span className="flex flex-row justify-end">0</span>
+    <span className="flex flex-row justify-end">{0}</span>
         <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
     </NavLink>
     </div>
