@@ -45,7 +45,7 @@ const toggleCartContainer = ()=>setIsCartOpen(!isCartOpen);
         </li>)
         : (
             <li className="Nav-item ">
-                <Link className="Nav-link  bg-white px-2 py-1 text-black rounded-full font-bold border-4 border-indigo-300/100 ... text-xl  "
+                <Link className="Nav-link hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ... "
             to="/Login">
                 SIGN IN
                 </Link>
