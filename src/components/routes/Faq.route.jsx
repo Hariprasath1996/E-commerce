@@ -2,7 +2,7 @@ import { FaqData } from "../../constants/Faq";
 import { useState } from "react";
 const FaqProducts = () => {
     const Faq= (items) => {
-        const [Show,setShow]=useState(false)
+        const [Show]=useState(false)
     return (
         <>
         <div className="  bg-red-100 w-screen h-auto p-2 mb-5 flex flex-col items-center
