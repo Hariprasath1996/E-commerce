@@ -1,4 +1,4 @@
-// import { Outlet } from "react-router-dom";
+
 
 const Customs = () => {
     return ( 
@@ -21,7 +21,6 @@ IS BETTER</h1>
 </div>
 <div><img src="./src/images/zig-zag-right.jpg" alt="#" />
 </div>
-{/* <Outlet/> */}
 </section>
 
     );

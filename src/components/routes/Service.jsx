@@ -1,13 +1,10 @@
 import React from 'react';
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { Outlet } from "react-router-dom";
-
 const ServicePage = () => {
 return (
     <>
     <Navbar/>
-        <Outlet/>
         <div className='w-screen h-auto flex flex-col justify-center items-center bg-white p-6 text-lg gap-8 '>
     <h1 className=' text-black font-bold text-6xl p-2  flex flex-row gap-4 justify-center items-center'>Terms And Conditions</h1>
     <p className='font-bld text-xl text-green-800 '>

@@ -1,13 +1,11 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { Outlet } from "react-router-dom";
 import React from 'react';
 
 const AboutPage = () => {
 return (
     <>
     <Navbar/>
-        <Outlet/>
         <div className='w-screen h-auto flex flex-col justify-center items-center bg-white p-6 text-lg gap-8 '>
     <h2 className=' text-black font-bold text-4xl p-2  flex flex-row gap-4 justify-center items-center'>ABOUT US</h2>
     <img className=' ' src="./src/images/Culture.jpg" alt="#" />
