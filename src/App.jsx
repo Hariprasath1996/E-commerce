@@ -6,7 +6,7 @@ import { Footer } from "./components/routes/Footer";
 import { AboutPage } from "./components/routes/About";
 import {ContactPage}  from "./components/routes/Contact"
 import { LoginPage } from "./components/routes/Login";
-// import {Shopnow} from "./components/routes/Shopnow";
+import {Shopnow} from "./components/routes/Shopnow";
 import { Hunt } from "./components/routes/Hunting";
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
     <Route path="/About" element={<AboutPage />} />
     <Route path="/Contact" element={<ContactPage />} />
     <Route path="/log-in" element={<LoginPage/>}/>
-    {/* <Route path="Shop" element={<Shopnow />}/> */}
+    <Route path="Shop" element={<Shopnow />}/>
     <Route path="/Hunting" element={<Hunt/>}/>
   </Routes>
   <Footer />

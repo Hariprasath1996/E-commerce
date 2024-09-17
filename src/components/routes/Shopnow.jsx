@@ -1,21 +1,44 @@
 import React from 'react';
-import AllProducts from './AllProducts';
+import AllProducts from '../../constants/AllProducts';
 
 const Shopnow = () => {
 
+    const Items= (props) => {
+        return (
+            <div className="max-w-sm mx-auto bg-white w-80 md:w-96 m-4 flex flex-col items-center hover:scale-105 transition-transform duration-300 ease-in-out gap-4 shadow-lg rounded-lg overflow-hidden">
+                <img
+                    className="w-64 h-64 object-cover object-center"
+                    src={props.image}
+                    alt={props.name}
+                />
+                <h2 className="text-xl font-semibold text-gray-800 mb-1 text-center">
+                    {props.name}
+                </h2>
+                <span className="text-xl font-semibold text-gray-800 mb-3 text-center">
+                    ₹{props.price}
+                </span>
+                <button className="hover:cursor-pointer hover:bg-yellow-400 hover:text-white transition-all duration-300 ease-in-out p-2 bg-white text-black rounded-md font-bold border-2 border-yellow-400 mb-3">
+                    ADD TO CART
+                </button>
+            </div>
+        );
+    };
+
     return (
-        <div className="w-full p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {AllProducts.map((product) => (
-                <div key={product.id} className="bg-white shadow-lg rounded-lg p-4">
-                    <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-48 object-cover rounded-md mb-4"
-                    />
-                    <h2 className="text-xl font-bold text-gray-800">{product.name}</h2>
-                    <p className="text-lg text-gray-600">₹{product.price}</p>
-                </div>
-            ))}
+        <div>
+            <div className="flex flex-wrap justify-center mx-4 md:mx-14 pt-[5rem]">
+                {AllProducts .map((item, id) => {
+                    return (
+                        <Items
+                            key={id}
+                            id={item.id}
+                            name={item.name}
+                            price={item.price}
+                            image={item.image}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 };
