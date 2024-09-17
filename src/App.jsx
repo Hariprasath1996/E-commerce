@@ -1,24 +1,27 @@
+import {Navbar} from "./components/routes/Navbar"
 
-
-// import { Root, Home } from "./constants/root"
-// import { ShopProducts } from "./components/routes/Shopnow";
-// import { FaqProducts } from "./components/routes/Faq.route"
-// import { AboutPage } from "./components/routes/About"
-// import { ContactPage } from "./components/routes/Contact"
-// import { PolicyPage } from "./components/routes/PrivacyPolicy";
-// import { ServicePage } from "./components/routes/Service";
-// import { Hunt } from "./components/routes/Hunting";
-// import { IndustryProducts } from "./components/routes/Industrial";
-// // import { ErrorPage } from "./components/routes/ErrorPage";
-// import { useState, createContext } from "react";
-
-
+import React from "react";
+// import { Route } from "react-router-dom";
+import Home from "./components/routes/Home.main";
+  
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { Footer } from "./components/routes/Footer";
+import { AboutPage } from "./components/routes/About";
 
 
 const App = () => {
   return (
-    <>
-    </>
+  <>
+<BrowserRouter>
+  <Navbar />
+  <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route path="/About" element={<AboutPage />} />
+  </Routes>
+  <Footer />
+</BrowserRouter>
+
+  </>
   );
 }
 

@@ -11,12 +11,12 @@ const Navbar = () => {
                 <div  >
                     <ul className="menu-bar w-auto h-25 flex flex-row items-center justify-center gap-10 text-xl  text-white   ">
                         <NavLink to="/Shop" className="Shop hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ...  " >SHOP NOW</NavLink>
-                        <NavLink to="/ABOUT" className="About hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ABOUT </NavLink>
+                        <NavLink to="/ABOUT" className="About hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">ABOUT_US </NavLink>
                         <NavLink to="/CONTACT" className="Contact hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ... ">CONTACT</NavLink>
                     </ul>
                 </div>
                 <div className="  icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
-                    <NavLink to=" " className="Nav-link hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ..." > LOG IN </NavLink>
+                    <NavLink to="/Auth " className="Nav-link hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ..." > LOG IN </NavLink>
                     <div className="cart-container">
                         <NavLink to="/cart  " className="flex flex-row" >
                             <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
