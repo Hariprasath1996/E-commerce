@@ -1,14 +1,13 @@
 import {Navbar} from "./components/routes/Navbar"
-
 import React from "react";
-// import { Route } from "react-router-dom";
 import Home from "./components/routes/Home.main";
-  
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import { Footer } from "./components/routes/Footer";
 import { AboutPage } from "./components/routes/About";
-
-
+import {ContactPage}  from "./components/routes/Contact"
+import { LoginPage } from "./components/routes/Login";
+// import {Shopnow} from "./components/routes/Shopnow";
+import { Hunt } from "./components/routes/Hunting";
 const App = () => {
   return (
   <>
@@ -17,6 +16,10 @@ const App = () => {
   <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/About" element={<AboutPage />} />
+    <Route path="/Contact" element={<ContactPage />} />
+    <Route path="/log-in" element={<LoginPage/>}/>
+    {/* <Route path="Shop" element={<Shopnow />}/> */}
+    <Route path="/Hunting" element={<Hunt/>}/>
   </Routes>
   <Footer />
 </BrowserRouter>

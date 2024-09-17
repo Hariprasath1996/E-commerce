@@ -77,8 +77,5 @@ const AllProducts = [
         price: '2500 ',
         image: "https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/06/feafe7eb-1d21-4196-8ee7-83336ed86271_small.jpg"
     },
-
-
-
 ]
 export default AllProducts;

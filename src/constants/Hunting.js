@@ -16,9 +16,9 @@ const HuntingProducts=[
     },
     {
         id: 14,
-        name: " Custom Molded Earplugs",
+        name: "Custom Molded Earplugs",
         price: 'price: ₹ 2300 ',
-        image:"https://cdn11.bigcommerce.com/s-r69yc54oxa/images/stencil/900x1200/products/80/909/Decibullz-Pro-Post-Black_Final__93678.1698770142.jpg?c=2"
+        image:"https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2022/08/Push-Active_Black-Orange_S2BPW-P740_Buds-Case-Open-Hero_v002.jpg"
         
     },
 ]

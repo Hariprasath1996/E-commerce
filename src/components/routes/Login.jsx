@@ -1,66 +1,80 @@
 import React, { useState } from 'react';
 import { CgProfile } from "react-icons/cg";
-import { Navbar } from "./Navbar";
-import { Footer } from "./Footer";
+
 const LoginPage = () => {
-
-    // create two variables that takes string  and have a function in use state
-
+    // State for form inputs
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    // here we create a function for form submission
-
+    // Handle form submission
     const handleLogin = (e) => {
         e.preventDefault();
         setUsername('');
         setPassword('');
     };
 
-
     return (
         <>
-            <Navbar />
-            <div className=' w-screen h-auto flex flex-col justify-center items-center bg-cyan-400 p-6 text-lg gap-8 '>
-                <h2 className=' text-black font-bold text-2xl p-2  flex flex-row gap-4 justify-center items-center'>  <CgProfile className='text-red-600' />Profile-page</h2>
-                <form className=' w-screen h-auto flex flex-col justify-center items-center p-4  ' onSubmit={handleLogin}>
-                    <label className=' h-auto flex flex-row justify-center items-center text-black font-bold text-xl gap-x-8 p-3 w-[45rem]   '>
-                        User-ID :
-                        <input className=' text-black font-bold text-xl  p-2 rounded-md  '
+            <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-cyan-400 to-blue-500 py-8">
+                {/* Profile Heading */}
+                <h2 className="text-white font-bold text-4xl mb-8 flex flex-row gap-2 items-center">
+                    <CgProfile className="text-red-600 text-5xl" />
+                    Profile Page
+                </h2>
+
+                {/* Login Form */}
+                <form className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg" onSubmit={handleLogin}>
+                    <div className="mb-6">
+                        <label className="block text-gray-700 font-bold mb-2 text-lg" htmlFor="username">
+                            User-ID:
+                        </label>
+                        <input
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                             type="email"
+                            id="username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
+                            placeholder="Enter your email"
                             required
                         />
-                    </label >
-
-                    <br />
-                    <label className=' h-auto flex flex-row justify-center items-center text-black font-bold text-xl gap-x-8 p-3  w-[45rem] relative right-2 '>
-                        Password :
-                        <input className=' text-black font-bold text-xl p-2 rounded-md '
+                    </div>
+                    
+                    <div className="mb-6">
+                        <label className="block text-gray-700 font-bold mb-2 text-lg" htmlFor="password">
+                            Password:
+                        </label>
+                        <input
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                             type="password"
+                            id="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+                            placeholder="Enter your password"
                             required
                         />
-                    </label>
-                    <br />
-                    <label className=' h-auto flex flex-row justify-center items-center text-black font-bold text-xl gap-x-8 p-3    w-[45rem] relative right-12  '>
-                        Confirm-Password :
-                        <input className=' text-black font-bold text-xl p-2 rounded-md '
+                    </div>
+                    <div className="mb-6">
+                        <label className="block text-gray-700 font-bold mb-2 text-lg" htmlFor="confirm-password">
+                            Confirm Password:
+                        </label>
+                        <input
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                             type="password"
+                            id="confirm-password"
+                            placeholder="Re-enter your password"
                             required
                         />
-                    </label>
-                    <br />
-                    <button onClick={handleLogin} className='w-auto h-auto  hover:cursor-pointer hover:translate-y-1 px-6 py-2  bg-white text-black rounded-md font-bold border-4 border-indigo-300/100 ...   flex flex-col justify-center items-center ' type="submit">Login</button>
+                    </div>
+                    <button
+                        type="submit"
+                        className="w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                    >
+                        Login
+                    </button>
                 </form>
             </div>
-            <Footer />
         </>
     );
-
 };
 
 export { LoginPage };
-

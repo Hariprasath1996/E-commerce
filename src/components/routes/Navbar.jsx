@@ -16,7 +16,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="  icons w-25 h-25 flex flex-row items-center justify-center gap-10 text-white" >
-                    <NavLink to="/Auth " className="Nav-link hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ..." > LOG IN </NavLink>
+                    <NavLink to="/log-in " className="Nav-link hover:animate-pulse hover:cursor-pointer hover:translate-y-1 p-2 bg-white text-black  rounded-md font-bold border-4 border-indigo-300/100 ..." > LOG IN </NavLink>
                     <div className="cart-container">
                         <NavLink to="/cart  " className="flex flex-row" >
                             <span><TiShoppingCart className=" text-yellow-400 text-3xl hover:translate-y-1 hover:animate-pulse" /></span>
