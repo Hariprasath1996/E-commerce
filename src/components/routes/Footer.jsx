@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-cyan-500 to-blue-500 w-screen h-auto py-6">
+        <footer className="bg-gradient-to-r from-cyan-500 to-blue-500 w-auto h-auto py-6">
             <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-around p-4 gap-8 md:gap-16">
                 {/* Logo Section */}
                 <div className="logo mb-4 md:mb-0">
@@ -12,7 +12,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            className="hover:animate-pulse rounded-lg w-32 h-auto"
+                            className="hover:animate-pulse rounded-lg w-64 h-auto mt-6"
                             src="./src/images/skull-candy.png"
                             alt="Logo"
                         />
