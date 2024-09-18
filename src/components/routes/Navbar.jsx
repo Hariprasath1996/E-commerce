@@ -13,7 +13,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            className="hover:animate-pulse rounded-lg w-48 h-auto"
+                            className="hover:animate-bounce rounded-lg w-48 h-auto"
                             src="./src/images/skull-candy.png"
                             alt="Logo"
                         />

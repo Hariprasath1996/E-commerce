@@ -12,14 +12,12 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-
-                            className="hover:animate-pulse rounded-lg w-64 h-auto mt-6 "
+                            className="hover:animate-bounce rounded-lg w-48 h-auto pt-8"
                             src="./src/images/skull-candy.png"
                             alt="Logo"
                         />
                     </a>
                 </div>
-
                 {/* Links Section */}
                 <ul className="flex flex-col text-white font-bold text-lg gap-2">
                     <NavLink
