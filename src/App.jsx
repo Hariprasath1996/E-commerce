@@ -11,6 +11,7 @@ import { Hunt } from "./components/routes/Hunting";
 import {IndustryProducts} from "./components/routes/Industrial";
 import { PolicyPage } from "./components/routes/PrivacyPolicy";
 import { FaqProducts } from "./components/routes/Faq.route";
+import { ServicePage } from "./components/routes/Service";
 const App = () => {
   return (
   <>
@@ -26,6 +27,7 @@ const App = () => {
     <Route path="/industry" element={<IndustryProducts/>}/>
     <Route path="/privacy" element={<PolicyPage/>}/>
     <Route path="/faq" element={<FaqProducts/>}/>
+    <Route path="/services" element={<ServicePage/>}/>
   </Routes>
   <Footer />
 </BrowserRouter>

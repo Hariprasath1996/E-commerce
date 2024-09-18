@@ -8,14 +8,12 @@ const ContactPage = () => {
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
                     CONTACT US
                 </h1>
-
                 {/* Image */}
                 <img
                     className="w-full max-w-3xl h-auto rounded-lg shadow-lg mb-8"
                     src="./src/images/music.jpg"
                     alt="Contact"
                 />
-
                 {/* Contact Information */}
                 <div className="text-center space-y-4">
                     <h2 className="text-lg md:text-2xl text-gray-700 font-semibold">
