@@ -20,7 +20,6 @@ const IndustryProducts = () => {
     return (
         
     <div>
-        <Navbar/>
         <div className="flex flex-wrap mx-14 pt-[5rem]">
         {IndustrialProducts.map((item,id) => {
             return (
@@ -34,7 +33,6 @@ const IndustryProducts = () => {
             );
         })}
         </div>
-        <Footer/>
     </div>
     );
 };

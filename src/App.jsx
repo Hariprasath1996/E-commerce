@@ -8,6 +8,9 @@ import {ContactPage}  from "./components/routes/Contact"
 import { LoginPage } from "./components/routes/Login";
 import {Shopnow} from "./components/routes/Shopnow";
 import { Hunt } from "./components/routes/Hunting";
+import {IndustryProducts} from "./components/routes/Industrial";
+import { PolicyPage } from "./components/routes/PrivacyPolicy";
+import { FaqProducts } from "./components/routes/Faq.route";
 const App = () => {
   return (
   <>
@@ -20,6 +23,9 @@ const App = () => {
     <Route path="/log-in" element={<LoginPage/>}/>
     <Route path="Shop" element={<Shopnow />}/>
     <Route path="/Hunting" element={<Hunt/>}/>
+    <Route path="/industry" element={<IndustryProducts/>}/>
+    <Route path="/privacy" element={<PolicyPage/>}/>
+    <Route path="/faq" element={<FaqProducts/>}/>
   </Routes>
   <Footer />
 </BrowserRouter>
