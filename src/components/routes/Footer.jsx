@@ -12,7 +12,8 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            className="hover:animate-pulse rounded-lg w-64 h-auto mt-6"
+
+                            className="hover:animate-pulse rounded-lg w-64 h-auto mt-6 "
                             src="./src/images/skull-candy.png"
                             alt="Logo"
                         />
@@ -40,16 +41,16 @@ const Footer = () => {
                         FAQ
                     </NavLink>
                 </ul>
-                
                 <div className="flex flex-col gap-4">
                     <NavLink to="/CONTACT">
-                        <button className="hover:animate-pulse bg-white hover:bg-gray-400 text-black font-bold text-lg py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                        <button className="hover:animate-pulse text-white font-bold text-lg py-2 px-4 rounded-md transition duration-300 ease-in-out">
                             CONTACT US
                         </button>
                     </NavLink>
-                    <button className="hover:animate-pulse bg-white hover:bg-gray-400 text-black font-bold text-lg py-2 px-4 rounded-md transition duration-300 ease-in-out">
-                        SUBSCRIBE
-                    </button>
+                    <NavLink to={"/log-in"}>
+                        <button className="hover:animate-pulse text-white font-bold text-lg py-2 px-4 rounded-md transition duration-300 ease-in-out">
+                            SUBSCRIBE
+                        </button></NavLink>
                 </div>
             </div>
         </footer>
